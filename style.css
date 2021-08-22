@@ -3,15 +3,10 @@ body, html{
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+body{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     background-color: black;
     width: 100%;
 }
-
-
 nav{
     width: 100%;
     position: fixed;
@@ -24,7 +19,6 @@ nav{
     margin: 0;
     padding: 0 calc( 15% / 2);
     box-sizing: border-box;
-
     z-index: 2;
 }
 nav .logo{
@@ -77,6 +71,9 @@ nav .menu ul li a{
     text-decoration: none;
     color:white;
 }
+nav .menu ul li a:hover{
+    border-bottom: 1px solid;
+}
 nav .menu .menuIcon{
     height: 2.5rem;
     width: 2.5rem;
@@ -86,10 +83,6 @@ nav .menu .menuIcon{
 nav .menu .menuIcon:hover{
     transform: translateY(1rem) translateX(-2rem);
 }
-
-
-
-
 
 /* MENU ICON */
 
@@ -139,21 +132,6 @@ nav .menu .menuIcon:hover{
     transform: scaleX(66.6%) translateX(84%) translateY(-100%) translateZ(0px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* LOADER */
 .loader{
     display: flex;
@@ -185,11 +163,6 @@ nav .menu .menuIcon:hover{
 	}
     
 }
-
-
-
-
-
 
 .nameContainer{
     width: 90%;
@@ -226,19 +199,6 @@ nav .menu .menuIcon:hover{
     }
 }
 
-
-
-
-
-
-
-
-/* .presentation{
-    width: 100vw;
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-} */
 .slide {
     opacity: 0;
     transform: translateX(-40px);
@@ -256,8 +216,6 @@ nav .menu .menuIcon:hover{
              -o-transform: none;
                     transform: none;
 }
-
-
 
 .presentation section{
     height: 100vh;
@@ -339,12 +297,6 @@ nav .menu .menuIcon:hover{
     font-size: 3rem;
 }
 
-
-
-
-
-
-
 .Resume,.Works{
     max-width: 100%;
     max-height: 100%;
@@ -391,7 +343,6 @@ nav .menu .menuIcon:hover{
     letter-spacing: 2px;
     font-weight: lighter;
 }
-
 
 .Resume .content{
     font-family: 'Ubuntu';
@@ -526,6 +477,12 @@ nav .menu .menuIcon:hover{
     width: calc( 2rem * 4 );
     margin-top: 1.5rem;
 }
+.platzi-text{
+    fill:#364159;
+}
+.platzi-symbol{
+    fill:#a8ca6c;
+}
 .content .education .ENAP p:nth-child(2){
     font-weight: normal;
     color: #6A6B6D;
@@ -572,8 +529,6 @@ figure picture img{
         margin: 0 0 2rem 0;
     }
 }
-
-
 
 .gallery{
     max-width: 100%;
@@ -680,7 +635,6 @@ figure picture img{
     -o-transition: .3s cubic-bezier(.23,1,.32,1);
 }
 
-
 .item:hover .item-thumbnail{
     transform: scale(1.2);
 }
@@ -713,12 +667,9 @@ figure picture img{
     bottom: auto;
 }
 
-
 .modalClosed {
     display: none;
 }
-
-
 .modalOpened {
     position: absolute;
     top: 0;
@@ -740,6 +691,6 @@ figure picture img{
     justify-content: center;
     background-color: white;
     width: 50vw;
-    height: 50vw;
+    height: auto;
     padding: 5px;
 }
