@@ -204,7 +204,7 @@ app.component("Resume", {
                             <p>UX y maquetación de sistemas institucionales con frameworks reactivos. Subida y bajada de archivos con formularios.</p>
                         </li>
                         <li class="task">
-                            <p>Desarrollo de API REST. Modelado, manejo y consultas a bases de datos. Web Scraping. Reconocimiento facial a fotografías.</p>
+                            <p>Desarrollo de API REST. Modelado, manejo y consultas a bases de datos. Web Scraping. Reconocimiento facial.</p>
                         </li>
                         <li class="task">
                             <p>Branding de imagen institucional en publicaciones impresas. Animación y edición de video.</p>
