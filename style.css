@@ -139,6 +139,13 @@ nav .menu .menuIcon:hover{
     justify-content: center;
     align-items: center;
     margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background: black;
 }
 .svg {
     position: absolute;

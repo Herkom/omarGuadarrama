@@ -13,11 +13,12 @@
 </head>
 <body>
     <div id="app">
+        <div v-if='loading'>
+            <loader></loader>
+        </div>
         <navbar></navbar>
         <main>
-            <div v-if='loading'>
-                <loader></loader>
-            </div>
+            
             <Gallery :jobitems="jobitems" ></Gallery>
             <Resume></Resume>
             <History></History>
@@ -39,7 +40,6 @@
                 return {
                     jobitems,
                     loading,
-                    current: window.location.pathname,
                 }
             }
         })
