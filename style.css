@@ -22,6 +22,10 @@ nav{
     box-sizing: border-box;
     z-index: 2;
 }
+header .menuIcon{
+    display: none;
+}
+
 nav .logo{
     display: grid;
     grid-template-areas: "Omar Guadarrama";
@@ -75,63 +79,7 @@ nav .menu ul li a{
 nav .menu ul li a:hover{
     border-bottom: 1px solid;
 }
-nav .menu .menuIcon{
-    height: 2.5rem;
-    width: 2.5rem;
-    transform: translateY(1rem) translateX(-1rem);
-    transition: transform 1s ease;
-}
-nav .menu .menuIcon:hover{
-    transform: translateY(1rem) translateX(-2rem);
-}
 
-/* MENU ICON */
-
-.icon{
-    width: 2rem;
-    height: 2rem;
-    perspective: 1cm;
-    transform: rotateZ(-55deg) rotateX(35deg) rotateY(35deg);
-    transform-origin: bottom left;
-    transform-style: preserve-3d;
-    perspective-origin: top;
-    transition: all 1s ease;
-}
-.icon .O{
-    width: 100%;
-    height: 100%;
-    transform: scaleX(100%) translateZ(-2px);
-    transition: all 1s ease;
-    z-index: 0;
-}
-.icon .G{
-    width: 100%;
-    height: 100%;
-    transform: scaleX(85%) translateX(33%) translateY(-135%) translateZ(2px); 
-    transition: all 1s ease;
-    z-index: 1;
-}
-.icon .O svg .dot{
-    fill: black;
-    transition: all 1s ease;
-}
-.icon .O svg,
-.icon .G svg{
-    background: black;
-    fill: white;
-}
-.menuIcon:hover .icon{
-    transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
-}
-.menuIcon:hover .icon .O{
-    transform: scaleX(75%) translateZ(0px);
-}
-.menuIcon:hover .icon .O svg .dot{
-    fill: white;
-}
-.menuIcon:hover .icon .G{
-    transform: scaleX(66.6%) translateX(84%) translateY(-100%) translateZ(0px);
-}
 
 /* LOADER */
 .loader{
@@ -506,8 +454,19 @@ nav .menu .menuIcon:hover{
 }
 .content .languages h3 {
     color: #1D2653;
-    
 }
+.content .languages h4 {
+    color: #6A6B6D;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}
+.content .languages p{
+    font-weight: lighter;
+    color: #6A6B6D;
+    margin-top: 0;
+}
+
 .workContainers{
     display: flex;
     flex-direction: column;
@@ -797,5 +756,121 @@ figure picture img{
         grid-template-columns: 1fr;
         gap: 1rem;
     
+    }
+
+
+    nav {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 5vh 15vw 1.5cm 10vw;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    nav .logo{
+        order: 3;
+        align-self: flex-start;
+    }
+    nav .logo .nombre svg {
+        width: 24vw;
+        height: 8vw;
+    }
+    nav .menu{
+        order: 2;
+        height: 35%;
+    }
+    nav .logo .apellido svg {
+        width: 56vw;
+        height: 8vw;
+    }
+    nav .menu ul{
+        flex-direction: column;
+        font-size: 3.5vh;
+    }
+    nav .menu ul::before{
+        align-self: flex-start;
+    }
+    nav .menu ul::after{
+        align-self: flex-start;
+        content:"],"
+    }
+    nav .menu ul li{
+        margin: 1rem 0 1rem 2rem;
+        
+    }
+    nav #social{
+        order: 1;
+    }
+    header .menuIcon{
+        height: 1.5cm;
+        width: 1.5cm;
+        transform: translateY(1rem) translateX(-1rem);
+        transition: transform 1s ease;
+        display: block;
+        position: fixed;
+        bottom: 10vw;
+        right: 0;
+        z-index: 400;
+    }
+    header .menuIcon.beingTouched{
+        transform: translateY(1rem) translateX(-2rem);
+        right: 3vh;
+    }
+    
+    /* MENU ICON */
+    
+    .icon{
+        width: 1.5cm;
+        height: 1.5cm;
+        perspective: 1cm;
+        transform: rotateZ(-55deg) rotateX(35deg) rotateY(35deg);
+        transform-origin: bottom left;
+        transform-style: preserve-3d;
+        perspective-origin: top;
+        transition: all 1s ease;
+    }
+    .icon .O{
+        width: 100%;
+        height: 100%;
+        transform: scaleX(100%) translateZ(-2px);
+        transition: all 1s ease;
+        z-index: 0;
+        border: 5px solid black;
+    }
+    .icon .G{
+        width: 100%;
+        height: 100%;
+        transform: scaleX(85%) translateX(33%) translateY(-135%) translateZ(2px); 
+        transition: all 1s ease;
+        z-index: 1;
+        border: 5px solid black;
+    }
+    .icon .O svg .dot{
+        fill: black;
+        transition: all 1s ease;
+    }
+    .icon .O svg,
+    .icon .G svg{
+        background: black;
+        fill: white;
+    }
+
+    .menuIcon.beingTouched .icon{
+        transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+    }
+    .menuIcon.beingTouched .icon .O{
+        transform: scaleX(75%) translateZ(0px);
+        border: 0px;
+    }
+    .menuIcon.beingTouched .icon .O svg .dot{
+        fill: white;
+    }
+    .menuIcon.beingTouched .icon .G{
+        transform: scaleX(66.6%) translateX(84%) translateY(-100%) translateZ(0px);
+        border: 0px;
     }
 }

@@ -1,39 +1,38 @@
 app.component('navbar',{
     template:`
         <header>
-            <nav>
+            <div class="menuIcon" v-on:click="openOrClose" :class=" isOpenOrClosed ? 'beingTouched' : ''" >
+                <section class="icon" >
+                    <div class="O">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.64 35.64">
+                            <g id="Layer_2" data-name="Layer 2">
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <rect class="dot" x="14.44" y="16.43" width="7.8" height="9.44"/>
+                                    <path d="M14.26,0V5.94H7.13V29.7h7.13v5.94H0V0Z"/>
+                                    <path d="M21.38,35.64V29.7h7.13V5.94H21.38V0H35.64V35.64Z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="G">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.64 35.64">
+                            <g id="Layer_2" data-name="Layer 2">
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <polygon points="15.78 14.88 15.78 20.54 27.75 20.54 27.75 29.7 7.89 29.7 7.89 5.94 15.78 5.94 15.78 0 0 0 0 35.64 35.64 35.64 35.64 14.88 15.78 14.88"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </section>
+            </div>
+            <nav v-show="isOpenOrClosed" >
                 <div class="menu">
                     <ul>
                         <li><a href="#gallery">Portafolio</a></li>
                         <li><a href="#resume">Resume/Contacto</a></li>
                         <li><a href="#history">Historia</a></li>
-                    </ul>
-                    <!-- <div class="menuIcon">
-                        <section class="icon">
-                            <div class="O">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.64 35.64">
-                                    <g id="Layer_2" data-name="Layer 2">
-                                        <g id="Layer_1-2" data-name="Layer 1">
-                                            <rect class="dot" x="14.44" y="16.43" width="7.8" height="9.44"/>
-                                            <path d="M14.26,0V5.94H7.13V29.7h7.13v5.94H0V0Z"/>
-                                            <path d="M21.38,35.64V29.7h7.13V5.94H21.38V0H35.64V35.64Z"/>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="G">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.64 35.64">
-                                    <g id="Layer_2" data-name="Layer 2">
-                                        <g id="Layer_1-2" data-name="Layer 1">
-                                            <polygon points="15.78 14.88 15.78 20.54 27.75 20.54 27.75 29.7 7.89 29.7 7.89 5.94 15.78 5.94 15.78 0 0 0 0 35.64 35.64 35.64 35.64 14.88 15.78 14.88"/>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
-                        </section>
-                    </div> -->                    
+                    </ul>                 
                 </div>
-
                 <div class="logo">
                     <div class="nombre">
                         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 2">
@@ -60,8 +59,6 @@ app.component('navbar',{
                     </div>
                 </div>
 
-                
-
                 <div class='menu' id="social">
                     <ul>
                         <li>LinkedIn</li>
@@ -72,4 +69,23 @@ app.component('navbar',{
             </nav>
         </header>
     `,
+
+    setup(){
+        let isOpenOrClosed = ref(true);
+
+        
+        let isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+
+        if(isMobile){
+            isOpenOrClosed.value = false;
+        }
+
+        function openOrClose(){
+            isOpenOrClosed.value = !isOpenOrClosed.value;
+        }
+        return {
+            isOpenOrClosed,
+            openOrClose
+        }
+    }
 })

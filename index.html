@@ -31,17 +31,20 @@
     <script>
         const {createApp, ref, onMounted, provide, inject} = Vue
         const app = createApp({
+
             setup(){
                 const loading = ref(true);
 
                 let jobitems = jobItems;
 
                 provide('loading', loading)
+
                 return {
                     jobitems,
                     loading,
                 }
             }
+            
         })
     </script>
 
