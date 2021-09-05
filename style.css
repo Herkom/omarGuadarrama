@@ -800,16 +800,39 @@ figure picture img{
     }
     nav .menu ul li{
         margin: 1rem 0 1rem 2rem;
-        
+        display: flex;
     }
+    nav .menu#social ul li a{
+        display: flex;
+    }
+    nav .menu#social ul li a svg{
+        fill:white;
+        width: 4vh;
+        height: 4vh;
+    }
+    
+    nav .menu#social ul li a p{
+        margin: 0 0 0 2vh;
+    }
+
     nav #social{
         order: 1;
     }
     header .menuIcon{
         height: 1.5cm;
         width: 1.5cm;
+
+        -o-transform: translateY(1rem) translateX(-1rem);
+        -webkit-transform: translateY(1rem) translateX(-1rem);
+        -ms-transform: translateY(1rem) translateX(-1rem);
+        -moz-transform: translateY(1rem) translateX(-1rem);
         transform: translateY(1rem) translateX(-1rem);
+
+        -o-transition: transform 1s ease;
+        -webkit-transition: transform 1s ease;
+        -moz-transition: transform 1s ease;
         transition: transform 1s ease;
+
         display: block;
         position: fixed;
         bottom: 10vw;
@@ -817,6 +840,10 @@ figure picture img{
         z-index: 400;
     }
     header .menuIcon.beingTouched{
+        -o-transform: translateY(1rem) translateX(-2rem);
+        -webkit-transform: translateY(1rem) translateX(-2rem);
+        -ms-transform: translateY(1rem) translateX(-2rem);
+        -moz-transform: translateY(1rem) translateX(-2rem);
         transform: translateY(1rem) translateX(-2rem);
         right: 3vh;
     }
@@ -827,25 +854,55 @@ figure picture img{
         width: 1.5cm;
         height: 1.5cm;
         perspective: 1cm;
+        
+        -o-transform: rotateZ(-55deg) rotateX(35deg) rotateY(35deg);
+        -webkit-transform: rotateZ(-55deg) rotateX(35deg) rotateY(35deg);
+        -ms-transform: rotateZ(-55deg) rotateX(35deg) rotateY(35deg);
+        -moz-transform: rotateZ(-55deg) rotateX(35deg) rotateY(35deg);
         transform: rotateZ(-55deg) rotateX(35deg) rotateY(35deg);
+
         transform-origin: bottom left;
         transform-style: preserve-3d;
         perspective-origin: top;
+        
+        -o-transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
         transition: all 1s ease;
     }
     .icon .O{
         width: 100%;
         height: 100%;
+
+        -o-transform: scaleX(100%) translateZ(-2px);
+        -webkit-transform: scaleX(100%) translateZ(-2px);
+        -ms-transform: scaleX(100%) translateZ(-2px);
+        -moz-transform: scaleX(100%) translateZ(-2px);
         transform: scaleX(100%) translateZ(-2px);
+
+        -o-transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
         transition: all 1s ease;
+        
         z-index: 0;
         border: 5px solid black;
     }
     .icon .G{
         width: 100%;
         height: 100%;
-        transform: scaleX(85%) translateX(33%) translateY(-135%) translateZ(2px); 
+
+        -o-transform: scaleX(85%) translateX(33%) translateY(-135%) translateZ(2px);
+        -webkit-transform: scaleX(85%) translateX(33%) translateY(-135%) translateZ(2px);
+        -ms-transform: scaleX(85%) translateX(33%) translateY(-135%) translateZ(2px);
+        -moz-transform: scaleX(85%) translateX(33%) translateY(-135%) translateZ(2px);
+        transform: scaleX(85%) translateX(33%) translateY(-135%) translateZ(2px);
+
+        -o-transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
         transition: all 1s ease;
+        
         z-index: 1;
         border: 5px solid black;
     }
@@ -860,9 +917,17 @@ figure picture img{
     }
 
     .menuIcon.beingTouched .icon{
+        -o-transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+        -ms-transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+        -moz-transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
         transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
     }
     .menuIcon.beingTouched .icon .O{
+        -o-transform: scaleX(75%) translateZ(0px);
+        -webkit-transform: scaleX(75%) translateZ(0px);
+        -ms-transform: scaleX(75%) translateZ(0px);
+        -moz-transform: scaleX(75%) translateZ(0px);
         transform: scaleX(75%) translateZ(0px);
         border: 0px;
     }
@@ -870,6 +935,10 @@ figure picture img{
         fill: white;
     }
     .menuIcon.beingTouched .icon .G{
+        -o-transform: scaleX(66.6%) translateX(84%) translateY(-100%) translateZ(0px);
+        -webkit-transform: scaleX(66.6%) translateX(84%) translateY(-100%) translateZ(0px);
+        -ms-transform: scaleX(66.6%) translateX(84%) translateY(-100%) translateZ(0px);
+        -moz-transform: scaleX(66.6%) translateX(84%) translateY(-100%) translateZ(0px);
         transform: scaleX(66.6%) translateX(84%) translateY(-100%) translateZ(0px);
         border: 0px;
     }
