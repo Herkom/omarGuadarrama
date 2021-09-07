@@ -57,6 +57,10 @@ nav .menu ul{
     color: white;
     font-family: "Ubuntu Mono";
     padding: 0;
+    
+}
+nav .menu#social ul{
+    align-items: center;
 }
 nav .menu ul::before{
     content: "[";
@@ -67,6 +71,8 @@ nav .menu ul::after{
 nav .menu ul li{
     list-style: none;
     margin: 0 0.5rem;
+    display: flex;
+    align-items: center;
 }
 nav .menu ul li:nth-child(1)::after,
 nav .menu ul li:nth-child(2)::after{
@@ -75,6 +81,19 @@ nav .menu ul li:nth-child(2)::after{
 nav .menu ul li a{
     text-decoration: none;
     color:white;
+    display: flex;
+    align-items: center;
+}
+nav .menu ul li a svg{
+    width: 1.3rem;
+    height: 1.3rem;
+    fill: white;
+    margin-right: 0.5rem;
+    display: none;
+}
+nav .menu ul li a p{
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem;
 }
 nav .menu ul li a:hover{
     border-bottom: 1px solid;
@@ -481,7 +500,6 @@ figure picture img{
 
 .gallery{
     max-width: 100%;
-    position: relative;
     margin: 10rem 5% 0 5%;
 }
 .gallery-container{
@@ -620,17 +638,17 @@ figure picture img{
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
     left: 0;
     background-color: rgba(0,0,0,.5);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
+    justify-content: flex-start;
+    z-index: 100;    
+    bottom: 0;
+
+    overflow-y: scroll;
+    padding: 4rem;
 }
   
 .modalOpened article {
@@ -639,7 +657,6 @@ figure picture img{
     align-items: center;
     justify-content: center;
     background-color: white;
-    width: 50vw;
     height: auto;
     padding: 5px;
 }
@@ -809,6 +826,7 @@ figure picture img{
         fill:white;
         width: 4vh;
         height: 4vh;
+        display: block;
     }
     
     nav .menu#social ul li a p{

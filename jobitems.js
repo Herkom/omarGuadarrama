@@ -20,6 +20,7 @@ const jobItems = [
         ],
         technologies: ['Python', 'Scrapy', 'API de Zyte, anteriormente Scrapinghub', 'Azure', 'Firebase', 'Vue', 'HTML', 'CSS', 'JavaScript', 'Figma'],
         images: [
+            'extracto0.jpg',
             'extracto1.jpg',
             'extracto2.jpg',
             'extracto3.jpg',
@@ -57,6 +58,7 @@ const jobItems = [
             'Un obstaculo al que me enfrenté y que me llevó a varios momentos de frustración fue que Svelte tiene ciertos problemas con el manejo de varios archivos con formularios. Al final se pudo dar la vuelta al problema, pero llevo algo de tiempo.',
         ],
         images: [
+            'osfedemy_0.jpg',
             'osfedemy_1.jpg',
             'osfedemy_2.jpg',
             'osfedemy_3.jpg',
@@ -206,6 +208,7 @@ const jobItems = [
         ],
         technologies: ['Indesign', 'Illustrator', 'Photoshop',],
         images: [
+            'editorial0.jpg',
             'editorial1.jpg',
             'editorial2.jpg',
             'editorial3.jpg',
