@@ -18,7 +18,7 @@ const jobItems = [
             Se uso Firebase para almacenar el número de identificación de cada trabajo para ser llamado en la API de Zyte. Use Vue por ser un framework fácil de usar y con un buen desempeño.`,
             `Cada noticia es rankeada de acuerdo a un sistema de puntos. Entre más palabras contenga la noticia mayor puntuación obtiene. Esto es para medir su relevancia. Existen ciertas palabras que destacan demasiado por ser directamente relacionadas con el OSFE y existe la posibilidad de agregar o quitar palabras si así lo deseamos.`,
         ],
-        technologies: ['Python', 'Scrapy', 'API de Zyte, anteriormente Scrapinghub', 'Azure', 'Firebase', 'Vue', 'HTML', 'CSS', 'JavaScript', 'Figma'],
+        technologies: ['Python', 'Scrapy', 'Zyte-Scrapinghub', 'Azure', 'Firebase', 'Vue', 'HTML', 'CSS', 'JavaScript', 'Figma'],
         images: [
             'extracto0.jpg',
             'extracto1.jpg',
@@ -186,7 +186,7 @@ const jobItems = [
             'Por esto considere que por el momento no valía la pena cambiar su logo, ya que cumplía con su función principal, identificar. Cambié todo el diseño editorial de su CV y portafolio.',
             'En cuanto a la página web, la plantilla se adaptó de acuerdo a la imagen de la empresa.',
         ],
-        technologies: ['InDesign', 'Photoshop', 'Illustrator', 'HTML', 'CSS', 'JavaScript',],
+        technologies: ['InDesign', 'Photoshop', 'Illustrator', 'HTML', 'CSS', 'Bootstrap', 'JavaScript',],
         images: [
             'reygar1.jpg',
             'reygar2.jpg',
@@ -236,6 +236,7 @@ const jobItems = [
         ],
         technologies: [ 'Illustrator', 'Photoshop', 'After Effects', 'Premiere Pro', 'ToonBoom',],
         images: [
+            'escena0.jpg',
             'escena1.jpg',
             'escena2.jpg',
             'escena3.jpg'

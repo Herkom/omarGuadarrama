@@ -15,29 +15,42 @@ app.component('galleyItem',{
 
         <div v-on:click="modalToggle" :class="isOpen ? 'modalOpened' : 'modalClosed'">
             <article>
-                <figure class="item-thumbnail">
-                    <picture>
-                        <img :src=" './resized/' + item.images[0]" alt="item.description">
-                    </picture>
-                    <figcaption>{{item.description}}</figcaption>
-                </figure>
+                <header>
+                    <figure class="item-thumbnail">
+                        <picture>
+                            <img :src=" './resized/' + item.images[0]" alt="item.description">
+                        </picture>
+                        <figcaption>{{item.description}}</figcaption>
+                    </figure>
+                    <section>
+                        <h2>{{item.name}}</h2>
+                        <h3>{{item.description}}</h3>
+                        <article class="technologies">
+                            <div class="techContainer" v-for="(tech, index) in item.technologies" >
+                                <object v-if=" './svg/' + item.technologies[index] + '.svg' " type="image/svg+xml" :data=" './svg/' + item.technologies[index] + '.svg' " class="icon"></object>
+                                <p>{{item.technologies[index]}}</p>
+                            </div>
+                            
+                        </article>
+                    </section>
+                </header>
 
-                <h2>{{item.name}}</h2>
-                <h3>{{item.description}}</h3>
-
-                <p v-for="(p, index) in item.explanation">
-                    {{item.explanation[index]}}
-                </p>
+                <section class="explanation">
+                    <p v-for="(p, index) in item.explanation">
+                        {{item.explanation[index]}}
+                    </p>
+                </section>
 
                 <figure v-for="(image, index) in item.images">
                     <picture>
                         <img :src=" './resized/' + item.images[index]" alt="">
                     </picture>
                 </figure>
-
-                <p v-for="(p, index) in item.conclusion">
-                    {{item.conclusion[index]}}
-                </p>
+                <section class="conclusion">
+                    <p v-for="(p, index) in item.conclusion">
+                        {{item.conclusion[index]}}
+                    </p>
+                </section>
             </article>
         </div>
 
