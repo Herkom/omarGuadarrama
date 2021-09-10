@@ -8,6 +8,10 @@ body{
     width: 100%;
     font-family: Ubuntu, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+header .logoOnlyForMobile{
+    height: 0;
+    width: 0;
+}
 nav{
     width: 100%;
     position: fixed;
@@ -281,7 +285,7 @@ nav .menu ul li a:hover{
     align-items: center;
     margin-bottom: 1rem;
 }
-.Resume header .logo svg{
+.Resume header .logo svg {
     height: 8rem;
     width: 8rem;
     fill: white;
@@ -315,7 +319,21 @@ nav .menu ul li a:hover{
     letter-spacing: 2px;
     font-weight: lighter;
 }
-
+.Resume header .downloadIcon{
+    color: #87CDB4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+.Resume header .downloadIcon object{
+    height: 3rem;
+    width: 3rem;
+}
+.Resume header .downloadIcon p{
+    margin: 0;
+}
 .Resume .content{
     max-width: 65%;
     color: white;
@@ -695,7 +713,7 @@ figure picture img{
 .modalOpened article header section .technologies .techContainer:last-child::after{
     content: '';
 }
-.modalOpened article header section .technologies .techContainer object{
+.modalOpened article header section .technologies .techContainer .techContainer-icon{
     height: 1.5rem;
     margin-right: 0.3rem;
 }
@@ -814,15 +832,46 @@ figure picture img{
         margin: 0 0 2rem 0;
     }
     .gallery{
-        margin: 10rem 0 0 0;
+        margin: 0;
     }
     .gallery-container{
         grid-template-columns: 1fr;
         gap: 1rem;
     
     }
-
-
+    .gallery-container .item{
+        height: fit-content;
+        height: -moz-fit-content;
+    }
+    .gallery-container .item .item-thumbnail figcaption{
+        display: none;
+    }
+    .gallery-container .item .item-thumbnail picture img{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .modalOpened{
+        top: 0;
+    }
+    .modalOpened article{
+        padding: 0;
+    }
+    .modalOpened article header{
+        flex-direction: column;
+    }
+    .modalOpened article header section{
+        width: 100%;
+    }
+    .modalOpened article header .item-thumbnail {
+        width: 100%;
+    }
+    .modalOpened article .explanation,
+    .modalOpened article .conclusion {
+        width: 85%;
+        margin: 2rem 0;
+        font-size: 1rem;
+    }
     nav {
         background-color: black;
         width: 100%;
@@ -893,16 +942,16 @@ figure picture img{
         -moz-transform: translateY(1rem) translateX(-1rem);
         transform: translateY(1rem) translateX(-1rem);
 
-        -o-transition: transform 1s ease;
-        -webkit-transition: transform 1s ease;
-        -moz-transition: transform 1s ease;
-        transition: transform 1s ease;
+        -o-transition: transform 0.6s ease;
+        -webkit-transition: transform 0.6s ease;
+        -moz-transition: transform 0.6s ease;
+        transition: transform 0.6s ease;
 
         display: block;
         position: fixed;
         bottom: 10vw;
         right: 0;
-        z-index: 190;
+        z-index: 200;
     }
     header .menuIcon.beingTouched{
         -o-transform: translateY(1rem) translateX(-2rem);
@@ -913,6 +962,12 @@ figure picture img{
         right: 3vh;
     }
     
+    header .logoOnlyForMobile{
+        margin: 1rem auto;
+        height: 8rem;
+        width: 8rem;
+        fill: white;
+    }
     /* MENU ICON */
     
     .icon{
@@ -930,10 +985,10 @@ figure picture img{
         transform-style: preserve-3d;
         perspective-origin: top;
         
-        -o-transition: all 1s ease;
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        transition: all 1s ease;
+        -o-transition: all 0.6s ease;
+        -webkit-transition: all 0.6s ease;
+        -moz-transition: all 0.6s ease;
+        transition: all 0.6s ease;
     }
     .icon .O{
         width: 100%;
@@ -945,10 +1000,10 @@ figure picture img{
         -moz-transform: scaleX(100%) translateZ(-2px);
         transform: scaleX(100%) translateZ(-2px);
 
-        -o-transition: all 1s ease;
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        transition: all 1s ease;
+        -o-transition: all 0.6s ease;
+        -webkit-transition: all 0.6s ease;
+        -moz-transition: all 0.6s ease;
+        transition: all 0.6s ease;
         
         z-index: 0;
         border: 5px solid black;
@@ -963,17 +1018,17 @@ figure picture img{
         -moz-transform: scaleX(85%) translateX(33%) translateY(-135%) translateZ(2px);
         transform: scaleX(85%) translateX(33%) translateY(-135%) translateZ(2px);
 
-        -o-transition: all 1s ease;
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        transition: all 1s ease;
+        -o-transition: all 0.6s ease;
+        -webkit-transition: all 0.6s ease;
+        -moz-transition: all 0.6s ease;
+        transition: all 0.6s ease;
         
         z-index: 1;
         border: 5px solid black;
     }
     .icon .O svg .dot{
         fill: black;
-        transition: all 1s ease;
+        transition: all 0.6s ease;
     }
     .icon .O svg,
     .icon .G svg{
