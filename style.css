@@ -905,7 +905,6 @@ figure picture img{
     }
     .modalOpened article .explanation,
     .modalOpened article .conclusion {
-        width: 85%;
         margin: 2rem 0;
         font-size: 1rem;
     }
@@ -924,7 +923,7 @@ figure picture img{
         margin: 2rem 0;
     }
     .modalOpened article .explanation p{
-        width: auto;
+        width: 85vw;
     }
     .modalOpened article .conclusion p{
         width: auto;
