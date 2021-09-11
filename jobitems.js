@@ -24,7 +24,7 @@ const jobItems = [
             `Cada noticia es rankeada de acuerdo a un sistema de puntos. Entre más palabras contenga la noticia mayor puntuación obtiene. Esto es para medir su relevancia. 
             Existen ciertas palabras que destacan demasiado por ser directamente relacionadas con el OSFE y existe la posibilidad de agregar o quitar palabras si así lo deseamos.`,
         ],
-        technologies: ['Python', 'Scrapy', 'Zyte-Scrapinghub', 'Azure', 'Firebase', 'Vue', 'HTML', 'CSS', 'JavaScript', 'Figma'],
+        technologies: ['Python', 'Scrapy', 'Zyte-Scrapinghub', 'Azure', 'Firebase', 'Vue', 'HTML', 'CSS', 'Javascript', 'Figma'],
         images: [
             'extracto0.jpg',
             'extracto1.jpg',
@@ -73,7 +73,7 @@ const jobItems = [
             'osfedemy_12.jpg',
             'osfedemy_13.jpg',
         ],
-	    technologies: ['Svelte', 'SQL', 'HTML', 'CSS', 'Adobe XD', 'PHP', 'JavaScript'],
+	    technologies: ['Svelte', 'SQL', 'HTML', 'CSS', 'Adobe XD', 'PHP', 'Javascript'],
         conclusion: [
             'Sabiamos que podríamos enfrentarnos a poca documentación porque Svelte es un framework relativamente nuevo. Sin embargo, aunque su comunidad es pequeña, los bugs o carencias del framework estaban bien documentadas y tomadas en cuenta para futuras iteraciones. Definitivamente volvería a usar Svelte en proyectos futuros.',
             'Cuando me quedé sólo sentí inseguridad por no saber si era capaz de llevar a buen termino este proyecto. Mi síndrome de impostor salío a relucir en varias ocasiones. Entendí que no lo sé todo, pero que todo se puede aprender.',
@@ -95,7 +95,7 @@ const jobItems = [
             'Los cambios vienen a mitad del proyecto debido decisiones de parte de los directivos. Los cambios constantes en los textos de la información retrasan mucho la salida de este proyecto',
             'Solicito más tiempo para crear una versión mobile, pero los directivos deciden que el proyecto bastaba para las necesidades de los entes y se le da fin.'
         ],
-        technologies: ['HTML', 'CSS', 'JavaScript'],
+        technologies: ['HTML', 'CSS', 'Javascript'],
         images: [
             'calendario-01.jpg',
             'calendario-02.jpg',
@@ -123,7 +123,7 @@ const jobItems = [
             'Diseño el formulario basandome en un diseño del youtuber Kevin Powell. Se crea el formato en Illustrator y en Acrobat se colocaron los espacios a llenar.',
             'Modelé la base de datos en MySQL. Cree los scripts de escritura y consulta a la base de datos en PHP.',
         ],
-        technologies: ['HTML', 'CSS', 'JavaScript', 'SQL', 'PHP', 'Illustrator', 'Acrobat'],
+        technologies: ['HTML', 'CSS', 'Javascript', 'SQL', 'PHP', 'Illustrator', 'Acrobat'],
         images: [
             'bolsaDeTrabajo_1.jpg',
             'bolsaDeTrabajo_2.jpg',
@@ -146,7 +146,7 @@ const jobItems = [
             'Se solicita el rediseño de la página del sitio oficial del OSFE Tabasco. Presentamos dos propuestas de diseño. El Fiscal Superior elige una versión "híbrida" entre las dos propuestas.',
             'Un compañero se enfoca en el BackEnd y en el manejo de WordPress. Yo me enfoco en el menú desplegable, en animaciónes y estilos con CSS.'
         ],
-        technologies: ['HTML', 'CSS', 'WordPress', 'JavaScript' ],
+        technologies: ['HTML', 'CSS', 'WordPress', 'Javascript' ],
         images: [
             'osfeTabasco_1.jpg',
             'osfeTabasco_2.jpg',
@@ -170,7 +170,7 @@ const jobItems = [
             'La empresa empezaba a ser reconocida con el logo que mi amigo diseñó y se personalizaron varios artículos con ese mismo logo. Por esta razón considero que por el momento no valía la pena cambiar su logo, ya que cumple con su función primordial, que es identificar a la empresa. Yo cambio todo el diseño editorial de su CV y portafolio. También realizo el diseño editorial de su manual de seguridad.',
             'En cuanto a la página web, la plantilla se adapta de acuerdo a la imagen de la empresa.',
         ],
-        technologies: ['InDesign', 'Photoshop', 'Illustrator', 'HTML', 'CSS', 'Bootstrap', 'JavaScript',],
+        technologies: ['InDesign', 'Photoshop', 'Illustrator', 'HTML', 'CSS', 'Bootstrap', 'Javascript',],
         images: [
             'reygar1.jpg',
             'reygar2.jpg',
