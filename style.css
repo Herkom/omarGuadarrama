@@ -115,7 +115,7 @@ nav .menu ul li a:hover{
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 200;
+    z-index: 300;
     background: black;
 }
 .svg {
@@ -633,7 +633,7 @@ figure picture img{
 }
 .modalOpened {
     position: absolute;
-    top: 8rem;
+    top: 0;
     right: 0;
     left: 0;
     background-color: rgba(0,0,0,.5);
@@ -641,7 +641,7 @@ figure picture img{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    z-index: 180;    
+    z-index: 200;    
     bottom: 0;
 
     overflow-y: scroll;
@@ -758,6 +758,171 @@ figure picture img{
 .modalOpened article .conclusion p{
     width: 40vw;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+#Ilustración .images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#Ilustración .images figure{
+    width: 30%;
+    margin: 1rem;
+}
+#Ilustración .images figure:first-child{
+    width: 85%;
+    margin: 1rem;
+}
+#Ilustración .images figure picture img{
+    width: 100%;
+}
+
+
+
+
+#Diseño .images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#Diseño .images figure{
+    width: 20%;
+    margin: 1rem;
+}
+#Diseño .images figure:first-child{
+    width: 85%;
+    margin: 1rem;
+}
+#Diseño .images figure picture img{
+    width: 100%;
+}
+
+
+
+
+#Sitio .images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#Sitio .images figure{
+    width: 40%;
+    margin: 1rem;
+    box-shadow: 0px 8px 30px 0px #bebebe;
+    height: fit-content;
+}
+#Sitio .images figure img{
+    width: 100%;
+}
+
+
+
+#Bolsa .images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#Bolsa .images figure{
+    width: 40%;
+    margin: 1rem;
+    box-shadow: 0px 8px 30px 0px #bebebe;
+    height: fit-content;
+}
+#Bolsa .images figure:first-child{
+    width: 85%;
+    margin: 1rem;
+}
+#Bolsa .images figure picture img{
+    width: 100%;
+}
+#Bolsa .images figure:last-child{
+    width: 30%;
+    margin: 1rem;
+}
+
+#OSFEdemy .images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#OSFEdemy .images figure{
+    width: 40%;
+    margin: 1rem;
+    height: fit-content;
+}
+#OSFEdemy .images figure img{
+    width: 100%;
+}
+#OSFEdemy .images figure:first-child{
+    width: 80%;
+}
+#OSFEdemy .images figure:nth-child(n+8){
+    width: 45%;
+    box-shadow: 0px 8px 30px 0px #bebebe;
+}
+#OSFEdemy .images figure:last-child{
+    width: 30%;
+}
+
+
+#Extracto .images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+#Extracto .images figure{
+    margin: 1rem;
+}
+#Extracto .images figure picture img{
+    width: 100%;
+}
+#Extracto .images figure:first-child{
+    display: none;
+}
+#Extracto .images figure:nth-child(2){
+    width: 50%;
+}
+#Extracto .images figure:nth-child(3),
+#Extracto .images figure:last-child{
+    width: 80%;
+}
+
+
+
+#Calendario .images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#Calendario .images figure{
+    margin: 1rem;
+    box-shadow: 0px 8px 30px 0px #bebebe;
+    width: 80%;
+}
+#Calendario .images figure picture img{
+    width: 100%;
+}
+#Calendario .images figure:first-child{
+    display: none;
+}
+#Calendario .images figure:nth-child(n+4){
+    width: 40%;
+}
+
+
+
+
+
 
 @media (min-width: 601px) and (max-width: 1000px){
     figure picture img{
@@ -922,14 +1087,37 @@ figure picture img{
     
         margin: 2rem 0;
     }
-    .modalOpened article .explanation p{
+    .modalOpened article .explanation p,
+    .modalOpened article .conclusion p{
         width: 85vw;
     }
-    .modalOpened article .conclusion p{
-        width: auto;
+    .modalOpened article .conclusion{
+        column-width: auto;
     }
 
-
+    .modalOpened #Extracto .images figure,
+    .modalOpened #OSFEdemy .images figure,
+    .modalOpened #Calendario .images figure,
+    .modalOpened #Bolsa .images figure,
+    .modalOpened #Sitio .images figure,
+    .modalOpened #Reygar .images figure,
+    .modalOpened #Diseño .images figure,
+    .modalOpened #Ilustración .images figure
+    {
+        width: 100%;
+        height: fit-content;
+        margin: 1rem 0;
+    }
+    .modalOpened #Extracto .images figure picture img,
+    .modalOpened #OSFEdemy .images figure picture img,
+    .modalOpened #Calendario .images figure picture img,
+    .modalOpened #Bolsa .images figure picture img,
+    .modalOpened #Sitio .images figure picture img,
+    .modalOpened #Reygar .images figure picture img,
+    .modalOpened #Diseño .images figure picture img,
+    .modalOpened #Ilustración .images figure picture img{
+        margin-bottom: 0;
+    }
 
     nav {
         background-color: black;
@@ -1010,7 +1198,7 @@ figure picture img{
         position: fixed;
         bottom: 10vw;
         right: 0;
-        z-index: 200;
+        z-index: 210;
     }
     header .menuIcon.beingTouched{
         -o-transform: translateY(1rem) translateX(-2rem);

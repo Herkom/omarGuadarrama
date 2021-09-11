@@ -32,7 +32,7 @@ app.component('navbar',{
                     </div>
                 </section>
             </div>
-            <nav v-show="isOpenOrClosed" >
+            <nav v-show="isOpenOrClosed" id="navbar">
                 <div class="menu">
                     <ul>
                         <li v-on:click="openOrClose" ><a href="#gallery">Portafolio</a></li>

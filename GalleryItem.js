@@ -14,7 +14,7 @@ app.component('galleyItem',{
 
 
         <div v-on:click="modalToggle(id)" :class="isOpen ? 'modalOpened' : 'modalClosed'">
-            <article>
+            <article :id="item.name.split(' ', 1)">
                 <header>
                     <figure class="item-thumbnail">
                         <picture>
@@ -41,12 +41,13 @@ app.component('galleyItem',{
                         {{item.explanation[index]}}
                     </p>
                 </section>
-
-                <figure v-for="(image, index) in item.images">
-                    <picture>
-                        <img :src=" './resized/' + item.images[index]" alt="">
-                    </picture>
-                </figure>
+                <section class="images">
+                    <figure v-for="(image, index) in item.images">
+                        <picture>
+                            <img :src=" './resized/' + item.images[index]" alt="">
+                        </picture>
+                    </figure>
+                </section>
                 <section class="conclusion">
                     <p v-for="(p, index) in item.conclusion">
                         {{item.conclusion[index]}}
@@ -67,8 +68,10 @@ app.component('galleyItem',{
             if (isOpen.value){
                 window.scrollTo(0,0);
             }else{
+                let navBarHeight = document.getElementById('navbar').offsetHeight
                 let ele = document.getElementById(id);
-                window.scrollTo(ele.offsetLeft, ele.offsetTop);
+
+                window.scrollTo(ele.offsetLeft, ele.offsetTop - navBarHeight);
             }
         
         }
