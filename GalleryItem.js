@@ -30,8 +30,9 @@ app.component('galleyItem',{
                                 <object v-if=" './svg/' + item.technologies[index] + '.svg' " type="image/svg+xml" :data=" './svg/' + item.technologies[index] + '.svg' " class="techContainer-icon"></object>
                                 <p>{{item.technologies[index]}}</p>
                             </div>
-                            
                         </article>
+                        <p class="role" ><strong>Role: </strong>{{item.role}}</p>
+                        <p class="status" ><strong>Status: </strong>{{item.status}}</p>
                     </section>
                 </header>
 

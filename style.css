@@ -695,10 +695,9 @@ figure picture img{
     text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 0;
+    padding: 1rem;
 }
 .modalOpened article header section .technologies p{
-    
     margin: 0;
 }
 
@@ -717,13 +716,47 @@ figure picture img{
     height: 1.5rem;
     margin-right: 0.3rem;
 }
+.modalOpened article header section .role{
+    margin-bottom: 0;
+}
 .modalOpened article .explanation,
 .modalOpened article .conclusion{
     color: gray;
     font-size: 12px;
-    width: 50%;
     line-height: 1.65em;
     letter-spacing: 0em;
+
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+
+    margin: 3rem 0;
+
+    -moz-column-fill: balance;
+       column-fill: balance;
+}
+.modalOpened article .conclusion{
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+
+    -webkit-column-width: 40vw;
+    -moz-column-width: 40vw;
+    column-width: 40vw;
+}
+.modalOpened article .explanation p{
+    width: 25vw;
+}
+.modalOpened article .explanation p:first-child,
+.modalOpened article .conclusion p:first-child{
+    margin-top: 0;
+}
+.modalOpened article .conclusion p{
+    width: 40vw;
 }
 
 @media (min-width: 601px) and (max-width: 1000px){
@@ -831,6 +864,10 @@ figure picture img{
         height: 100vh;
         margin: 0 0 2rem 0;
     }
+    .modalOpened figure picture img{
+        height: auto;
+        box-shadow: 0px 5px 20px 0px #aaaaaa;
+    }
     .gallery{
         margin: 0;
     }
@@ -872,6 +909,29 @@ figure picture img{
         margin: 2rem 0;
         font-size: 1rem;
     }
+
+
+
+
+
+    .modalOpened article .explanation,
+    .modalOpened article .conclusion{
+    
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    
+        margin: 2rem 0;
+    }
+    .modalOpened article .explanation p{
+        width: auto;
+    }
+    .modalOpened article .conclusion p{
+        width: auto;
+    }
+
+
+
     nav {
         background-color: black;
         width: 100%;
@@ -963,9 +1023,9 @@ figure picture img{
     }
     
     header .logoOnlyForMobile{
-        margin: 1rem auto;
-        height: 8rem;
-        width: 8rem;
+        margin: 2rem auto;
+        height: 6rem;
+        width: 6rem;
         fill: white;
     }
     /* MENU ICON */
