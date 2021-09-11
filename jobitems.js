@@ -190,7 +190,7 @@ const jobItems = [
             'En el OSFE Tabasco, aparte de desempeñarme como Front-End developer, también diseño mucho material para medios electrónicos o impresos.',
             'Desde portadas de revista, reconocimientos, personificadores, toma y edición de video, pasando por articulos promocionales hasta posts de redes sociales.'
         ],
-        technologies: ['Indesign', 'Illustrator', 'Photoshop', 'After Effects', 'Premiere Pro',],
+        technologies: ['InDesign', 'Illustrator', 'Photoshop', 'After Effects', 'Premiere Pro',],
         images: [
             'editorial0.jpg',
             'editorial1.jpg',
