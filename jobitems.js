@@ -2,27 +2,28 @@ const jobItems = [
     {
         name: 'Extracto',
         description: 'Las noticias más relevantes de los medios locales del Estado de Tabasco, México.',
+        link: ['https://herkom.github.io/Extracto/',],
         role: 'Full Stack Developer',
         status: 'Actualmente en uso, julio 2021',
         explanation:[
-            `Dentro del OSFE Tabasco, una de las actividades diarias es recopilar dos veces al día las noticias más recientes para mantener informado al Fiscal Superior del acontecer diario. 
+            `Dentro del <b>OSFE Tabasco</b>, una de las actividades diarias es recopilar dos veces al día las noticias más recientes para mantener informado al Fiscal Superior del acontecer diario. 
             Estás noticias son de temas como la vida política del Estado, obras públicas, uso de dinero público, menciones a la institución, etc.
-            Para reunirlas visito los sitios web de los distintos medios, sus páginas de Twitter y Facebook.
-            Después las noticias se entregan en un documento PDF. Es un proceso de 'extracción' que consume mucho tiempo.`,
-            `Este proyecto surge por iniciativa propia. Por curiosidad en el tema de Web Scraping tomo dos cursos, uno de fundamentos de Web Scraping con Python y otro de Scrapy.
+            Para reunirlas visito los <b>sitios web</b> de los distintos medios, sus páginas de <b>Twitter y Facebook</b>.
+            Después las noticias se entregan en un documento PDF. Es un proceso de <b><i>'extracción'</b></i> que consume mucho tiempo.`,
+            `Este proyecto surge por iniciativa propia. Por curiosidad en el tema de <b>Web Scraping</b> tomo dos cursos, uno de fundamentos de <b><i>Web Scraping con Python</i></b> y otro de <b>Scrapy</b>.
             Ya que sé cómo extraer información de forma automática de las páginas web entiendo que el proceso de creación de la síntesis de noticias puede ser acelerado.`,
             `Busco un diseño sencillo donde la información fuera la prioridad.
-            Sé que el principal lector es el Fiscal Superior, que usa anteojos, por lo cual el tamaño de letra debe ser mayor de lo usual.
-            También sé que el principal medio de visualización es por teléfono móvil, por eso el desarrollo es Mobile First.`,
-            `El mayor obstáculo es usar la API de Zyte. Durante el desarrollo, ScrapingHub pasa a ser Zite. 
-            Su API cambia, la documentación no es lo bastante clara o hay ciertos huecos en como mandar a iniciar el trabajo de la araña para hacer scraping. 
+            Sé que el principal lector es el <b>Fiscal Superior</b>, que usa anteojos, por lo cual el tamaño de letra debe ser mayor de lo usual.
+            También sé que el principal medio de visualización es por teléfono móvil, por eso el desarrollo es <b>Mobile First</b>.`,
+            `El mayor obstáculo es usar la <b>API de Zyte</b>. Durante el desarrollo, <i>ScrapingHub pasa a ser Zite</i>. 
+            Su <b>API</b> cambia, la documentación no es lo bastante clara o hay ciertos huecos en como mandar a iniciar el trabajo de la araña para hacer <i>scraping</i>. 
             Tado un poco en resolver eso pero al final cada trabajo es llamado de forma correcta.`,
-            `Por cada extracción se manda a llamar la araña de Scrapy, por eso es necesario calendarizan los trabajos para hacerlos de forma automática.
-            La licencia gratuita de Zyte no permite calendarizar los trabajos. Por esto es que opte por Azure Functions, que usa CRON. 
+            `Por cada extracción se manda a llamar la araña de <b>Scrapy</b>, por eso es necesario calendarizan los trabajos para hacerlos de forma automática.
+            La licencia gratuita de <b>Zyte</b> no permite calendarizar los trabajos. Por esto es que opte por <b>Azure Functions</b>, que usa <b>CRON</b>. 
             Este servicio es gratuito hasta cierta cantidad de funciones y de uso computacional.
-            Se usa Firebase para almacenar el número de identificación de cada trabajo y ser llamado en la API de Zyte. Uso Vue por ser un framework fácil de usar y con un buen desempeño.`,
-            `Cada noticia es rankeada de acuerdo a un sistema de puntos. Entre más palabras contenga la noticia mayor puntuación obtiene. Esto es para medir su relevancia. 
-            Existen ciertas palabras que destacan demasiado por ser directamente relacionadas con el OSFE y existe la posibilidad de agregar o quitar palabras si así lo deseamos.`,
+            Se usa <b>Firebase</b> para almacenar el número de identificación de cada trabajo y ser llamado en la <b>API de Zyte</b>. Uso <b>Vue</b> por ser un framework fácil de usar y con un buen desempeño.`,
+            `Cada noticia es <b>rankeada</b> de acuerdo a un sistema de puntos. Entre más palabras contenga la noticia mayor puntuación obtiene. Esto es para medir su relevancia. 
+            Existen ciertas palabras que destacan demasiado por ser directamente relacionadas con el <b>OSFE</b> y existe la posibilidad de agregar o quitar palabras si así lo deseamos.`,
         ],
         technologies: ['Python', 'Scrapy', 'Zyte-Scrapinghub', 'Azure', 'Firebase', 'Vue', 'HTML', 'CSS', 'Javascript', 'Figma'],
         images: [
@@ -35,9 +36,9 @@ const jobItems = [
             `Este fue un proyecto bastante divertido de desarrollar. Tuve momentos felices y tristes pero al final el resultado me parece bueno para ser mi primer proyecto de iniciativa completamene propia.`,
             `Para la siguiente iteración me gustaría probar otras formas de hacer el ranking de noticias, debe existir una forma más eficiente de hacerlo. Posiblemente con inteligencia artificial.`,
             `Tiempo más tarde descubrí un problema, los medios locales no siempre actualizan de forma inmediata sus páginas principales o aparecen noticias de fechas pasadas. 
-            Dónde sí que publican los links de sus noticias más recientes es en Twitter, por eso conseguí mi cuenta de desarrollador. Extraeré los twits relevantes y apareceran en el feed.`,
+            Dónde sí que publican los links de sus noticias más recientes es en <b>Twitter</b>, por eso conseguí mi <b>cuenta de desarrollador</b>. Extraeré los twits relevantes y apareceran en el feed.`,
             `También sería buena idea poner un tipo de alerta cuando una noticia hable directamente de la institución, ya qué en teoría son las que más importan.`,
-            `El crear este proyecto por mi cuenta me permitió entender dos cosas: el poder y responsabilidad de quién toma las decisiones en el proyecto y la importancia de tener un equipo de desarrollo.`,
+            `El crear este proyecto por mi cuenta me permitió entender dos cosas: el <b>poder y responsabilidad de quién toma las decisiones</b> en el proyecto y la importancia de <b>tener un equipo de desarrollo</b>.`,
         ],
     },
 
@@ -45,15 +46,16 @@ const jobItems = [
     {
         name: 'OSFEdemy / SICAP',
         description: 'Sistema de Registro y Control de Capacitaciones',
+        link: ['http://200.56.118.28/osfedemy/',],
         role: 'Full Stack Developer',
         status: 'Actualmente en uso, julio 2021',
         explanation:[
             'A causa de la pandemia de COVID-19 se solicita desarrollar una plataforma de enseñanza en línea para los cursos que ofrece el OSFE Tabasco.',
-            'Un compañero se encarga del Back-End mientras yo del Front-End. La propuesta es tener las clases de los cursos grabadas en formato de video para así servirlas on demand.',
+            'Un compañero se encarga del <b>Back-End</b> mientras yo del <b>Front-End</b>. La propuesta es tener las clases de los cursos grabadas en formato de video para así servirlas <i>on demand</i>.',
             'Se da luz verde a lo planeado, pero al enumerar los servicios e infraestructura necesarias para la cantidad de usuarios que la institución pretende instruir, la parte administrativa de la institución se da cuenta que el presupuesto es más alto del que se pretende destinar al proyecto. Se pide simplificar el proyecto y unicamente sea la plataforma de registro para los cursos.',
-            'El diseño y prototipo original son creados en Adobe XD. Buscamos un diseño Desktop first, amigable para el usuario y agradable a la vista. Por curiosidad tomo un curso de Svelte y en conjunto con mi compañero decidimos usarlo por lo novedoso que es. En medio del proyecto, a mi compañero lo asignan a otro proyecto. Se hacen cambios en el diseño de la interfaz y me quedo a cargo del proyecto.',
-            'Modelo las bases de datos de alumnos, profesores y cursos en SQL. La API para la consulta de datos, los scripts para el registro de alumnos, subida de archivos para material de curso, logueo de usuarios y creación cursos nuevos son desarrollados en PHP. Uso jsPDF para la generación de constancias y/o reconocimientos, js-base64 para sus imagenes de fondo. SheetJS para listas de registro y de asistencia. IziToast para notificaciones. También maqueto un correo electrónico a modo de respuesta ante el registro exitoso a un curso.',
-            'Un obstaculo al que me enfrento y que me lleva a varios momentos de frustración es que Svelte tiene ciertos problemas con el manejo de varios archivos con formularios. Al final pude dar la vuelta al problema, aunque llevo algo de tiempo.',
+            'El diseño y prototipo original son creados en <b>Adobe XD</b>. Buscamos un diseño <b>Desktop first</b>, amigable para el usuario y agradable a la vista. Por curiosidad tomo un curso de <b>Svelte</b> y en conjunto con mi compañero decidimos usarlo por lo novedoso que es. En medio del proyecto, a mi compañero lo asignan a otro proyecto. Se hacen cambios en el diseño de la interfaz y me quedo <b>yo sólo</b> a cargo del proyecto.',
+            'Modelo las bases de datos de alumnos, profesores y cursos en <b>SQL</b>. La <b>API</b> para la consulta de datos, los scripts para el registro de alumnos, subida de archivos para material de curso, logueo de usuarios y creación cursos nuevos son desarrollados en <b>PHP</b>. Uso <b>jsPDF</b> para la generación de constancias y/o reconocimientos, <b>js-base64</b> para sus imagenes de fondo. <b>SheetJS</b> para listas de registro y de asistencia. <b>IziToast</b> para notificaciones. También maqueto un correo electrónico a modo de respuesta ante el registro exitoso a un curso.',
+            'Un obstaculo al que me enfrento y que me lleva a varios momentos de frustración es que <b>Svelte</b> en su momento tenía ciertos problemas con el manejo de varios archivos con formularios. Al final pude dar la vuelta al problema, aunque llevo algo de tiempo.',
         ],
         images: [
             'osfedemy_0.jpg',
@@ -72,10 +74,10 @@ const jobItems = [
         ],
 	    technologies: ['Svelte', 'SQL', 'HTML', 'CSS', 'Adobe XD', 'PHP', 'Javascript'],
         conclusion: [
-            'Sabiamos que podríamos enfrentarnos a poca documentación porque Svelte es un framework relativamente nuevo. Sin embargo, aunque su comunidad es pequeña, los bugs o carencias del framework estaban bien documentadas y tomadas en cuenta para futuras iteraciones. Definitivamente volvería a usar Svelte en proyectos futuros.',
+            'Sabiamos que podríamos enfrentarnos a poca documentación porque <b>Svelte</b> es un framework relativamente nuevo. Sin embargo, aunque su comunidad es pequeña, los bugs o carencias del framework estaban bien documentadas y tomadas en cuenta para futuras iteraciones. <b>Definitivamente</b> volvería a usar <b>Svelte</b> en proyectos futuros.',
             'Cuando me quedé sólo sentí inseguridad por no saber si era capaz de llevar a buen termino este proyecto. Mi síndrome de impostor salío a relucir en varias ocasiones. Entendí que no lo sé todo, pero que todo se puede aprender.',
             'Aprendí a entender el motivo de mi frustración y a tener paciencia conmigo mismo. Paciencia para entender a profundidad los problemas, reflexionar como resolverlos con mi código y en caso de no saber como resolverlos no desesperar y darme el tiempo para aprender a solucionarlos.',
-            'Entendí a que se refiere la frase tan usada en el Design Thinking: "Falla rápido, falla barato".',
+            'Entendí a que se refiere la frase tan usada en el <b>Design Thinking: <i>"Falla rápido, falla barato"</i></b>.',
         ],
     },
 
@@ -83,14 +85,15 @@ const jobItems = [
     {
         name: 'Calendario Interactivo',
         description: 'Calendario de Obligaciones Generales de los Entes Públicos del Estado de Tabasco',
+        link: ['https://www.osfetabasco.gob.mx/siteapp/calendarioInteractivo/',],
         role:'Front-End',
         status:'Actualmente en uso, julio 2021',
         explanation:[
             'Cada año los Entes Públicos están sujetos a cumplir con trámites dentro de ciertos plazos de tiempo. Una excusa común de los Entes es que desconocen dichos plazos y por lo tanto se atrasaban o no cumplían con sus obligaciones.',
             'Por esto se pide el diseño de un calendario donde se especifiquen las fechas importantes e inicio o fin de plazos. Durante varios años se diseñan calendarios impresos que eran distribuidos a los Entes Públicos, pero esto conlleva un gasto y es usual en el sector público que esto sea muy restringido.',
-            'Se vuelve digital. Sé que la cantidad de texto legal es enorme por esto en el diseño original se busca una interfaz limpia y directa.',
+            'Se vuelve digital. Sé que la cantidad de texto legal es enorme por esto en el diseño original se busca una <b>interfaz limpia y directa</b>.',
             'Los cambios vienen a mitad del proyecto debido decisiones de parte de los directivos. Los cambios constantes en los textos de la información retrasan mucho la salida de este proyecto',
-            'Solicito más tiempo para crear una versión mobile, pero los directivos deciden que el proyecto bastaba para las necesidades de los entes y se le da fin.'
+            'Solicito más tiempo para crear una <b>versión mobile</b>, pero los directivos deciden que el proyecto bastaba para las necesidades de los entes y se le da fin.'
         ],
         technologies: ['HTML', 'CSS', 'Javascript'],
         images: [
@@ -103,7 +106,7 @@ const jobItems = [
         ],
         conclusion:[
             'Me encantaría regresar al proyecto para completarlo de forma adecuada.',
-            'De tener la oportunidad en la siguiente iteración usaría componentes, especificamente en los días del calendario y en el recuadro donde se despliega la información. Deseaba implementar una versión vertical, que en boceto se veia muy bien.',
+            'De tener la oportunidad en la siguiente iteración usaría <b>componentes</b>, especificamente en los días del calendario y en el recuadro donde se despliega la información. Deseaba implementar una versión vertical, que en boceto se veia muy bien.',
             'Entendí que a veces tenemos que ceder a decisiones que pueden ser contrarias a nuestra forma de pensar, pero es más fácil aceptarlas si vienen con conocimiento y criterio.',
         ],
     },
@@ -112,14 +115,15 @@ const jobItems = [
     {
         name: 'Bolsa de Trabajo',
         description: 'Formulario de registro para la Bolsa de Trabajo del Órgano Superior de Fiscalización del Estado de Tabasco',
+        link: ['https://www.osfetabasco.gob.mx/siteapp/bolsatrabajo/',],
         role:'Front-End developer',
         status:'Actualmente en uso, julio 2021',
         explanation:[
             'El OSFE necesita una base de datos de los posibles candidatos a ocupar alguna plaza vacante.',
-            'Se pide un formulario de registro donde se especifica a que "sección" del OSFE se desea entrar. Esto es por que una parte de los registrados solo es vista por el depto. de Recursos Humanos y la otra por la Unidad Técnica del Servicio Fiscalizador de Carrera.',
+            'Se pide un formulario de registro donde se especifica a que <i>"sección"</i> del OSFE se desea entrar. Esto es por que una parte de los registrados solo es vista por el depto. de Recursos Humanos y la otra por la Unidad Técnica del Servicio Fiscalizador de Carrera.',
             'Se da la opción de crear el formulario completamente digital, pero el depto. de Recursos Humanos exige que los usuarios llenen un formato en PDF y lo carguen en el formulario.',
-            'Diseño el formulario basandome en un diseño del youtuber Kevin Powell. Se crea el formato en Illustrator y en Acrobat se colocaron los espacios a llenar.',
-            'Modelé la base de datos en MySQL. Cree los scripts de escritura y consulta a la base de datos en PHP.',
+            'Diseño el formulario basandome en un diseño del <b>youtuber <i>Kevin Powell</i></b>. Se crea el formato en <b>Illustrator</b> y en <b>Acrobat</b> se colocaron los espacios a llenar.',
+            'Modelé la base de datos en <b>MySQL</b>. Cree los scripts de escritura y consulta a la base de datos en <b>PHP</b>.',
         ],
         technologies: ['HTML', 'CSS', 'Javascript', 'SQL', 'PHP', 'Illustrator', 'Acrobat'],
         images: [
@@ -131,7 +135,7 @@ const jobItems = [
             'bolsaDeTrabajo_5.jpg',
         ],
         conclusion:[
-            'Aprendí mucho en este proyecto ya que era la primera vez usaba PHP, que trabajaba tanto con formularios, que modelaba y hacia consultas a una base de datos.',
+            'Aprendí mucho en este proyecto ya que era la primera vez usaba <b>PHP</b>, que trabajaba tanto con formularios, que modelaba y hacia consultas a una base de datos.',
         ],
     },
 
@@ -139,11 +143,12 @@ const jobItems = [
     {
         name: 'Sitio Oficial del OSFE Tabasco',
         description: 'Sitio Web Oficial del Órgano Superior de Fiscalización del Estado de Tabasco',
+        link: ['https://www.osfetabasco.gob.mx/site/',],
         role:'Front-End',
         status:'Actualmente en uso, julio 2021',
         explanation: [
-            'Se solicita el rediseño de la página del sitio oficial del OSFE Tabasco. Presentamos dos propuestas de diseño. El Fiscal Superior elige una versión "híbrida" entre las dos propuestas.',
-            'Un compañero se enfoca en el BackEnd y en el manejo de WordPress. Yo me enfoco en el menú desplegable, en animaciónes y estilos con CSS.'
+            'Se solicita el rediseño de la página del <b><i>sitio oficial del OSFE Tabasco</b></i>. Presentamos dos propuestas de diseño. El <b>Fiscal Superior</b> elige una versión <i>"híbrida"</i> entre las dos propuestas.',
+            'Un compañero se enfoca en el <b>BackEnd</b> y en el manejo de <b>WordPress</b>. Yo me enfoco en el menú desplegable, en animaciónes y estilos con <b>CSS</b>.'
         ],
         technologies: ['HTML', 'CSS', 'WordPress', 'Javascript' ],
         images: [
@@ -153,7 +158,7 @@ const jobItems = [
         ],
         conclusion: [
             'Fue la primera vez que trabajaba en conjunto con otro compañero en un proyecto de software. Conjugar nuestras propuestas y adaptar nuestras formas de trabajo fue un proceso muy interesante.',
-            'También fue la primera vez que trabajaba con WordPress.',
+            'También fue la primera vez que trabajaba con <b>WordPress</b>.',
             'Recibimos muchos comentarios elogiando el resultado final de nuestro trabajo. 😁',
         ],
     },
@@ -162,12 +167,13 @@ const jobItems = [
     {
         name: 'Reygar',
         description:'Construcción y Mantenimiento Insdustrial',
+        link: ['https://herkom.github.io/REYGAR/',],
         role:'Diseñador Gráfico y Front-End developer',
-        status:'Actualmente en uso, julio 2021',
+        status:'Pausado, julio 2021',
         explanation:[
             'Un amigo se dedica al negocio de la construcción. Su empresa comienza a crecer. Compañías grandes piden su página web, curriculum o portafolio de servicios.',
-            'Mi amigo compra un dominio y una plantilla prediseñada para su página. Él diseña su logo, su imagen corporativa y su papelería empresarial. Algunos de sus colegas le comentan que luce algo "informal" o el famoso "le falta diseño". Es cuando pide mi ayuda.',
-            'La empresa empezaba a ser reconocida con el logo que mi amigo diseñó y se personalizaron varios artículos con ese mismo logo. Por esta razón considero que por el momento no valía la pena cambiar su logo, ya que cumple con su función primordial, que es identificar a la empresa. Yo cambio todo el diseño editorial de su CV y portafolio. También realizo el diseño editorial de su manual de seguridad.',
+            'Mi amigo compra un dominio y una plantilla prediseñada para su página. Él diseña su logo, su imagen corporativa y su papelería empresarial. Algunos de sus colegas le comentan que luce algo <i>"informal"</i> o el famoso <i>"le falta diseño"</i>. Es cuando pide mi ayuda.',
+            'La empresa empezaba a ser reconocida con el logo que mi amigo diseñó y se personalizaron varios artículos con ese mismo logo. Por esta razón considero que por el momento no valía la pena cambiar su logo, ya que cumple con su función primordial, que es <b>identificar a la empresa</b>. Yo cambio todo el diseño editorial de su CV y portafolio. También realizo el diseño editorial de su manual de seguridad.',
             'En cuanto a la página web, la plantilla se adapta de acuerdo a la imagen de la empresa.',
         ],
         technologies: ['InDesign', 'Photoshop', 'Illustrator', 'HTML', 'CSS', 'Bootstrap', 'Javascript',],
@@ -184,10 +190,11 @@ const jobItems = [
     {
         name: 'Diseño Gráfico',
         description: 'Diseño de material gráfico para el OSFE Tabasco',
+        link: [],
         role:'Diseñador Gráfico',
         status:'Actualmente en uso, julio 2021',
         explanation:[
-            'En el OSFE Tabasco, aparte de desempeñarme como Front-End developer, también diseño mucho material para medios electrónicos o impresos.',
+            'En el OSFE Tabasco, aparte de desempeñarme como <b><i>Front-End developer</b></i>, también diseño mucho material para medios electrónicos o impresos.',
             'Desde portadas de revista, reconocimientos, personificadores, toma y edición de video, pasando por articulos promocionales hasta posts de redes sociales.'
         ],
         technologies: ['InDesign', 'Illustrator', 'Photoshop', 'After Effects', 'Premiere Pro',],
@@ -210,12 +217,13 @@ const jobItems = [
     {
         name: 'Ilustración y Animación',
         description:'',
+        link: ['https://www.youtube.com/results?search_query=dosis+de+ciencia+drucker','https://vimeo.com/search?q=Dosis%20de%20ciencia',],
         role:'Ilustrador y/o Animador',
         status:'Finalizado, julio ',
         explanation:[
             'Mis primeras experiencias en el mundo laboral fueron siendo ilustrador y animador.',
-            'Primero, en el estudio de animación DiezyMedia. Ilustro personajes, objetos y fondos para una serie de cápsulas animadas llamadas "Dosis de Ciencia" con el Dr. René Druke para el Universum, Museo de las Ciencias de la UNAM. Algunas aún se pueden ver en YouTube.',
-            'Después trabajo en la Dirección General de Televisión Educativa, donde ilustro y animo material educativo para Telesecundarias y spots del gobierno federal.',
+            'Primero, en el estudio de animación <b>DiezyMedia</b>. Ilustro personajes, objetos y fondos para una serie de cápsulas animadas llamadas <b><i>"Dosis de Ciencia"</i></b> con el <b>Dr. René Druke</b> para el <b><i>Universum, Museo de las Ciencias</i></b> de la <b>UNAM</b>. Algunas aún se pueden ver en YouTube.',
+            'Después trabajo en la <b>Dirección General de Televisión Educativa</b>, donde ilustro y animo material educativo para Telesecundarias y spots del gobierno federal.',
         ],
         technologies: [ 'Illustrator', 'Photoshop', 'After Effects', 'Premiere Pro', 'ToonBoom',],
         images: [
@@ -247,7 +255,7 @@ const jobItems = [
         ],
         conclusion:[
             'Disfrute mucho esta primer etapa de mi carrera.',
-            'Amo la ilustración, pero sobre todo la animación. Lo que aprendí de animación y edición me sirvió mucho para entender de forma más fácil las animaciones en la web.',
+            'Amo la ilustración, pero sobre todo la animación. Lo que aprendí de animación y edición me sirvió mucho para entender de forma más fácil las <b>animaciones en la web</b>.',
         ],
     },
 ]

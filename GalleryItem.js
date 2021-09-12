@@ -25,6 +25,7 @@ app.component('galleyItem',{
                     <section>
                         <h2>{{item.name}}</h2>
                         <h3>{{item.description}}</h3>
+                        <a v-for="(link, index) in item.link" :href="item.link[index]" >{{item.link[index]}}</a>
                         <article class="technologies">
                             <div class="techContainer" v-for="(tech, index) in item.technologies" >
                                 <object v-if=" './svg/' + item.technologies[index] + '.svg' " type="image/svg+xml" :data=" './svg/' + item.technologies[index] + '.svg' " class="techContainer-icon"></object>
@@ -37,8 +38,7 @@ app.component('galleyItem',{
                 </header>
 
                 <section class="explanation">
-                    <p v-for="(p, index) in item.explanation">
-                        {{item.explanation[index]}}
+                    <p v-for="(p, index) in item.explanation" v-html="item.explanation[index]">
                     </p>
                 </section>
                 <section class="images">
@@ -49,8 +49,7 @@ app.component('galleyItem',{
                     </figure>
                 </section>
                 <section class="conclusion">
-                    <p v-for="(p, index) in item.conclusion">
-                        {{item.conclusion[index]}}
+                    <p v-for="(p, index) in item.conclusion" v-html="item.conclusion[index]">
                     </p>
                 </section>
             </article>
