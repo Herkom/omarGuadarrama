@@ -99,12 +99,14 @@ app.component('navbar',{
     `,
 
     setup(){
+        window.scrollTo(0, 1);
         let isOpenOrClosed = ref(true);
 
         
         let isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
 
         if(isMobile){
+            window.scrollTo(0, 1);
             isOpenOrClosed.value = false;
         }
 

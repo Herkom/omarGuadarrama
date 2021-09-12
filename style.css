@@ -3,6 +3,9 @@ body, html{
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    height: 100vh;
+}
 body{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     background-color: black;
     width: 100%;
@@ -643,7 +646,7 @@ figure picture img{
     justify-content: flex-start;
     z-index: 200;    
     bottom: 0;
-
+    height: 100vh;
     overflow-y: scroll;
 }
   

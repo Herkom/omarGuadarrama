@@ -1,6 +1,6 @@
 app.component('galleyItem',{
     template: `
-        <article class="item" v-on:click="modalToggle" :id=id>
+        <article class="item" v-on:click="modalToggle(id)" :id=id>
             <figure class="item-thumbnail">
                 <picture>
                     <img :src=" './resized/' + item.images[0]" alt="item.description">
@@ -13,7 +13,7 @@ app.component('galleyItem',{
         </article>
 
 
-        <div v-on:click="modalToggle(id)" :class="isOpen ? 'modalOpened' : 'modalClosed'">
+        <div :id="'modal' + id.toString()" v-on:click="modalToggle(id)" :class="isOpen ? 'modalOpened' : 'modalClosed'">
             <article :id="item.name.split(' ', 1)">
                 <header>
                     <figure class="item-thumbnail">
@@ -66,11 +66,12 @@ app.component('galleyItem',{
             isOpen.value = !isOpen.value;
 
             if (isOpen.value){
-                window.scrollTo(0,0);
+                let modal= document.getElementById(`modal${id}`);
+                window.scrollTo(0,1);
+                modal.scrollTo(modal.offsetLeft, modal.offsetTop);
             }else{
-                let navBarHeight = document.getElementById('navbar').offsetHeight
                 let ele = document.getElementById(id);
-
+                let navBarHeight = document.getElementById('navbar').offsetHeight
                 window.scrollTo(ele.offsetLeft, ele.offsetTop - navBarHeight);
             }
         
