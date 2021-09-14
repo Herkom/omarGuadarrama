@@ -10,8 +10,8 @@ app.component('navbar',{
             </div>
             <div class="menuIcon" v-on:click="openOrClose" :class=" isOpenOrClosed ? 'beingTouched' : ''" >
                 <section class="icon" >
-                    <div class="O">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.64 35.64">
+                    <div class="O" :class=" isVisited ? '' : 'borderHighlight' " >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.64 35.64" >
                             <g id="Layer_2" data-name="Layer 2">
                                 <g id="Layer_1-2" data-name="Layer 1">
                                     <rect class="dot" x="14.44" y="16.43" width="7.8" height="9.44"/>
@@ -21,8 +21,8 @@ app.component('navbar',{
                             </g>
                         </svg>
                     </div>
-                    <div class="G">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.64 35.64">
+                    <div class="G" :class=" isVisited ? '' : 'borderHighlight' " >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.64 35.64" >
                             <g id="Layer_2" data-name="Layer 2">
                                 <g id="Layer_1-2" data-name="Layer 1">
                                     <polygon points="15.78 14.88 15.78 20.54 27.75 20.54 27.75 29.7 7.89 29.7 7.89 5.94 15.78 5.94 15.78 0 0 0 0 35.64 35.64 35.64 35.64 14.88 15.78 14.88"/>
@@ -99,6 +99,8 @@ app.component('navbar',{
     `,
 
     setup(){
+        const isVisited = inject('haveBeenVisited');
+
         window.scrollTo(0, 1);
         let isOpenOrClosed = ref(true);
 
@@ -112,9 +114,16 @@ app.component('navbar',{
 
         function openOrClose(){
             isOpenOrClosed.value = !isOpenOrClosed.value;
+
+            if(isVisited.value == false){
+                isVisited.value = true;
+                localStorage.setItem(`isVisited`, true);
+            }
+            
         }
         return {
             isOpenOrClosed,
+            isVisited,
             openOrClose
         }
     }

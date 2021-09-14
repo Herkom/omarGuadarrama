@@ -39,20 +39,41 @@
     <script src="https://unpkg.com/vue@next"></script>
     <script src="./jobitems.js"></script>
     <script>
+        let visited;
+
+        function pageNoVisited(){
+            localStorage.setItem(`isVisited`, false);
+            visited = false;
+        }
+
+        function pageAlreadyVisited(){
+            localStorage.setItem(`isVisited`, true)
+            visited = true
+        }
+
+        if (localStorage.length != 0){
+            pageAlreadyVisited();
+        } else {
+            pageNoVisited();
+        }
+
         window.scrollTo(0, 1);
         const {createApp, ref, onMounted, provide, inject} = Vue
         const app = createApp({
 
             setup(){
+                const isVisited = ref(visited);
                 const loading = ref(true);
 
                 let jobitems = jobItems;
 
                 provide('loading', loading)
+                provide('haveBeenVisited', isVisited)
 
                 return {
                     jobitems,
                     loading,
+                    visited
                 }
             }
             

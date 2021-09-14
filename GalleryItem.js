@@ -13,8 +13,11 @@ app.component('galleyItem',{
         </article>
 
 
-        <div :id="'modal' + id.toString()" v-on:click="modalToggle(id)" :class="isOpen ? 'modalOpened' : 'modalClosed'">
+        <div :id="'modal' + id.toString()" :class="isOpen ? 'modalOpened' : 'modalClosed'" >
             <article :id="item.name.split(' ', 1)">
+                <div class="closeIcon" v-on:click="modalToggle(id)">
+                    <img src="./svg/X.svg"></img>
+                </div>
                 <header>
                     <figure class="item-thumbnail">
                         <picture>
@@ -25,7 +28,10 @@ app.component('galleyItem',{
                     <section>
                         <h2>{{item.name}}</h2>
                         <h3>{{item.description}}</h3>
-                        <a v-for="(link, index) in item.link" :href="item.link[index]" >{{item.link[index]}}</a>
+                        <a v-for="(link, index) in item.link" :href="item.link[index]" target="_blank">
+                            <p>{{item.name}}</p>
+                            <object type="image/svg+xml" data="./svg/link.svg" class="link-icon"></object>
+                        </a>
                         <article class="technologies">
                             <div class="techContainer" v-for="(tech, index) in item.technologies" >
                                 <object v-if=" './svg/' + item.technologies[index] + '.svg' " type="image/svg+xml" :data=" './svg/' + item.technologies[index] + '.svg' " class="techContainer-icon"></object>
