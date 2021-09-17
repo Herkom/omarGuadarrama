@@ -37,7 +37,7 @@ app.component("Resume", {
             </div>
             <h2>Diseñador UX <strong>&</strong> Desarrollador Front-End</h2>
 
-            <a download href="./OmarGuadarrama___resume.png" target="_blank" class="downloadIcon">
+            <a download href="./OmarGuadarrama___resume.pdf" target="_blank" class="downloadIcon">
                 <object type="image/svg+xml" data="./svg/download.svg" class=""></object>
                 <p>Descargar Resume</p>
             </a>
