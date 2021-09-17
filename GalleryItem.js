@@ -16,7 +16,7 @@ app.component('galleyItem',{
         <div :id="'modal' + id.toString()" :class="isOpen ? 'modalOpened' : 'modalClosed'" >
             <article :id="item.name.split(' ', 1)">
                 <div class="closeIcon" v-on:click="modalToggle(id)">
-                    <img src="./svg/X.svg"></img>
+                    <img src="./svg/X.svg">
                 </div>
                 <header>
                     <figure class="item-thumbnail">
