@@ -23,7 +23,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
+    project: ['./tsconfig.json', './tsconfig.node.json', "./src/components/ui/*.d.ts"],
     tsconfigRootDir: __dirname,
     "ecmaFeatures": {
       "jsx": true
