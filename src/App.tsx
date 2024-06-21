@@ -6,6 +6,7 @@ import './App.css'
 import { ThemeProvider } from "@/components/theme-provider"
 import { ModeToggle } from './components/mode-toggle'
 import { Button } from "@/components/ui/button"
+import Gallery from './layouts/gallery'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,11 +25,9 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <div className="card">
-        <Button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </Button>
-      </div>
+      <section className="flex justify-center">
+        <Gallery />
+      </section>
     </ThemeProvider>
   )
 }
