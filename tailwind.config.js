@@ -9,6 +9,9 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    fontFamily:{
+      'sans': ['Ubuntu', '"Segoe UI"', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+    },
     container: {
       center: true,
       padding: "2rem",
