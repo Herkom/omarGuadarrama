@@ -1,0 +1,27 @@
+.card {
+  @apply relative flex h-[60dvh] items-center justify-center overflow-hidden rounded-md border text-card shadow;
+}
+.card--image {
+  @apply h-full w-[80dvw] max-w-none scale-100 object-contain;
+  @apply transition-all duration-500;
+}
+.card--title {
+  @apply absolute z-10 flex h-full w-4/5 items-center justify-center break-words text-4xl font-bold duration-300;
+  @apply scale-75 opacity-0;
+  @apply transition-all duration-300;;
+}
+.card::after {
+  @apply absolute z-0 h-full w-full bg-foreground/0 content-[''];
+  @apply transition-all duration-300;
+}
+
+
+.card:hover .card--title {
+  @apply scale-100 opacity-100;
+}
+.card:hover .card--image {
+  @apply scale-110;
+}
+.card:hover::after {
+  @apply bg-foreground/70;
+}
