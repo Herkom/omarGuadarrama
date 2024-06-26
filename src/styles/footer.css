@@ -4,7 +4,7 @@ footer {
 }
 .logo {
   @apply inline-block h-10 w-10 px-2;
-  @apply will-change-[filter] transition-[filter] duration-300;
+  @apply will-change-[filter] transition-[filter];
 }
 .logo.vite:hover {
   filter: drop-shadow(0 0 2em #646cffaa);

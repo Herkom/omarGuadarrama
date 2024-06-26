@@ -196,7 +196,7 @@ const jobItems: JobItem[] = [
       "En cuanto a la página web, la plantilla se adapta de acuerdo a la imagen de la empresa.",
     ],
     technologies: [
-      "InDesign",
+      "inDesign",
       "Photoshop",
       "Illustrator",
       "HTML",
@@ -221,7 +221,7 @@ const jobItems: JobItem[] = [
       "Desde portadas de revista, reconocimientos, personificadores, toma y edición de video, pasando por articulos promocionales hasta posts de redes sociales.",
     ],
     technologies: [
-      "InDesign",
+      "inDesign",
       "Illustrator",
       "Photoshop",
       "After Effects",
