@@ -1,0 +1,38 @@
+
+For 7 years, I was responsible for designing and developing institutional systems at the Superior Auditing Body of the State of Tabasco, institution which supervises the public treasury expenditures. 
+During this period, I undertook various projects, such as designing websites, developing APIs and databases, conducting web scraping, implementing facial recognition technology, creating institutional apps, managing institutional image, and editing animation/videos.
+
+Durante 7 años, fui responsable del diseño y desarrollo de sistemas institucionales en el Órgano de Fiscalización Superior del Estado de Tabasco, institución que supervisa el gasto del erario público. 
+Durante este periodo, realicé diversos proyectos, como diseño de sitios web, desarrollo de APIs y bases de datos, web scraping, implementación de tecnología de reconocimiento facial, creación de apps institucionales, gestión de imagen institucional y edición de animaciones/videos.
+
+
+
+
+
+Before entering to the Front End development, I created illustrations and animations for education, designed social media artwork for brands, and took/edit photographs and videos for corporate and social events.
+Antes de dedicarme al desarrollo Front End, creaba ilustraciones y animaciones para el sector educativo, diseñaba material gráfico para redes sociales de marcas y tomaba/editaba fotografías y vídeos para eventos corporativos y sociales.
+
+
+
+
+
+I am passionate about designing technology to create useful and aesthetic products for the world.
+Me apasiona diseñar tecnología para crear productos útiles y estéticos para el mundo.
+
+
+
+
+
+
+// Since 2022, I have been employed at Globant, a technology company specializing in creating digital solutions for global businesses. Within Globant, I work as a Front End Developer on the Autodesk Digital HIG component library engineering team. Our main tasks involve prototyping, building, and customizing components using the Material UI component library as a base. This includes extending native APIs, implementing theme overrides, and ensuring consistency with Autodesk's Digital HIG design system.
+// Desde 2022, trabajo en Globant, una empresa de tecnología especializada en la creación de soluciones digitales para empresas globales. Dentro de Globant, trabajo como Front End Developer en el equipo de ingeniería de la biblioteca de componentes de Autodesk Digital HIG. Nuestras tareas principales implican la creación de prototipos, la construcción y la personalización de componentes utilizando la biblioteca de componentes Material UI como base. Esto incluye extender APIs nativas, implementar theme overrides y asegurar la consistencia con el sistema de diseño Digital HIG de Autodesk.
+
+I joined Globant in 2022 as a Front End Developer in Autodesk's Digital HIG component library engineering team. My main tasks involve prototyping, building, and customizing components using the Material UI library, extending their APIs, implementing theme overrides, and ensuring consistency with the Autodesk Digital HIG design system.
+Me uní a Globant en 2022 como Front End Developer en el equipo de ingeniería de la librería de componentes Digital HIG de Autodesk. Mis tareas principales consisten en crear prototipos, construir y personalizar componentes utilizando la biblioteca Material UI, ampliar sus API, implementar anulaciones de temas y garantizar la coherencia con el sistema de diseño Digital HIG de Autodesk.
+
+
+
+
+
+
+With over seven years of experience, I work as a Front-End Developer at Globant in Autodesk’s Digital HIG engineering team. I focus on prototyping, building, and customizing components with the Material UI library. I have a multidisciplinary background, from creative expertise to technical skills. Beyond development, I am passionate about animation, illustration, architecture, and industrial design. Let's connect and innovate together for the future of digital experiences.
