@@ -1,0 +1,46 @@
+#navbar {
+  @apply fixed top-0 z-50 box-border bg-background;
+  @apply py-8;
+  @apply mx-auto w-full max-w-screen-xl;
+  @apply flex justify-around;
+  & .logo {
+    @apply flex justify-between;
+    & svg {
+      @apply h-[2dvw] fill-primary;
+    }
+  }
+  & .menu {
+    @apply flex h-full;
+    & ul {
+      @apply flex text-foreground;
+      &::before {
+        @apply content-['\['];
+      }
+      &::after {
+        @apply content-['\]'];
+      }
+      & li {
+        @apply mx-2 flex items-center;
+        &:nth-child(1)::after,
+        &:nth-child(2)::after {
+          @apply content-[','];
+        }
+        & a {
+          @apply flex items-center text-foreground;
+          & svg {
+            @apply h-5 fill-current mr-2;
+          }
+        }
+      }
+    }
+    &:not(#social) ul li a:hover {
+      @apply border-b-[1px] border-solid;
+    }
+    &#social ul {
+      @apply items-center;
+      & li a:hover p{
+        @apply border-b-[1px] border-solid;
+      }
+    }
+  }
+}

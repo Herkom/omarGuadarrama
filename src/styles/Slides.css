@@ -37,7 +37,10 @@
     }
     & article {
       & p {
-        @apply mb-8 text-3xl/normal tracking-wider;
+        @apply text-3xl/normal tracking-wider;
+        &:has(+ p) {
+          @apply mb-8;
+        }
         & .logo {
           @apply inline-block h-fit w-1/5 p-0;
         }

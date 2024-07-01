@@ -3,7 +3,7 @@ import autodeskLogo from "@/assets/icons/autodesk.svg";
 
 const History = () => {
   return (
-    <div id="presentation">
+    <div id="history">
       <section className="slide code">
         <article>
           <code>
