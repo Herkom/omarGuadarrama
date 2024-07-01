@@ -1,7 +1,7 @@
 import "@/styles/App.css";
 
 import { ThemeProvider } from "@/components/theme-provider";
-import { ModeToggle } from "./components/mode-toggle";
+import { ModeToggle } from "@/components/mode-toggle";
 import Intro from "@/layouts/intro";
 import Gallery from "@/layouts/gallery";
 import History from "@/layouts/history";

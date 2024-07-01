@@ -1,94 +1,60 @@
 .slide {
-  height: 100vh;
-  max-width: 100vw;
-  display: flex;
-  align-items: center;
-  animation: slideTransition ease-in-out both;
+  @apply h-dvh max-w-full;
+  @apply flex items-center;
+  @apply animate-[slideTransition_ease-in-out_both];
   animation-timeline: view();
-}
 
-@keyframes slideTransition {
-  0% {
-    opacity: 0;
-    transform: translateY(-40px);
-    filter: blur(40px);
+  &.intro {
+    & h1 {
+      @apply text-8xl text-primary;
+    }
+    & h2 {
+      @apply text-5xl font-thin text-muted-foreground;
+    }
   }
-  45%,
-  55% {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0px);
+  &.code {
+    @apply justify-center;
+    @apply text-primary;
+    & h3 {
+      @apply m-0 w-full text-7xl;
+    }
+    & h3 p {
+      @apply my-8 ml-16 mr-0 flex items-center;
+      @apply flex-nowrap text-5xl text-primary-foreground;
+    }
+    & .logo {
+      @apply h-fit w-2/6 p-0;
+    }
   }
-  100% {
-    opacity: 0;
-    transform: translateY(40px);
-    filter: blur(40px);
+  &.text {
+    & code {
+      & h3 {
+        @apply mb-4 text-4xl text-primary;
+        & p {
+          @apply my-4 ml-8 text-primary-foreground;
+        }
+      }
+    }
+    & article {
+      & p {
+        @apply mb-8 text-3xl/normal tracking-wider;
+        & .logo {
+          @apply inline-block h-fit w-1/5 p-0;
+        }
+        & i {
+          @apply text-secondary;
+        }
+      }
+      & > p strong {
+        @apply text-secondary;
+      }
+      & h2 {
+        @apply mb-4;
+        @apply text-5xl font-extrabold leading-tight tracking-wider text-secondary;
+      }
+    }
+    & .background p {
+      @apply my-2 text-sm;
+    }
   }
-}
-
-.intro h1 {
-  font-size: 5rem;
-  color: #ef6e51;
-}
-.intro h2 {
-  font-weight: lighter;
-  font-size: 2.5rem;
-  color: #cccccc;
-}
-.intro h2 strong {
-  color: #ef6e51;
-  font-weight: bolder;
-}
-.intro p {
-  color: #ffffff;
-  font-family: "Ubuntu";
-  font-size: 2rem;
-  letter-spacing: 2px;
-}
-.presentation .code article {
-  margin-left: 10%;
-  color: #ef6e51;
-}
-.presentation .code h3,
-.presentation .code strong {
-  font-size: 5rem;
-  margin: 0;
-}
-.presentation .code p {
-  color: #ffffff;
-  font-size: 4rem;
-  margin: 3rem 0 3rem 8rem;
-}
-.presentation .text article h2 {
-  font-weight: bolder;
-  font-size: 4rem;
-  color: #ffffff;
-  letter-spacing: 3px;
-  line-height: 5rem;
-  margin: 1rem 0;
-}
-.presentation .text article h2 strong {
-  color: #f4a262;
-}
-.presentation .text p {
-  color: #ffffff;
-  font-family: "Ubuntu";
-  font-size: 2rem;
-  letter-spacing: 2px;
-}
-.presentation .text p strong {
-  font-size: 2.5rem;
-}
-.presentation .text .lg {
-  max-width: 90%;
-}
-.presentation .text .md {
-  max-width: 75%;
-}
-.presentation .text .sh {
-  max-width: 50%;
-}
-.presentation .text .thanks strong {
-  color: #4259a8;
-  font-size: 3rem;
 }

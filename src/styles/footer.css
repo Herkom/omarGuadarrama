@@ -1,20 +1,20 @@
 footer {
-  @apply flex justify-start items-center;
+  @apply flex items-center justify-start;
   @apply text-sm text-muted-foreground;
-}
-.logo {
-  @apply inline-block h-10 w-10 px-2;
-  @apply will-change-[filter] transition-[filter];
-}
-.logo.vite:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-.logo.tailwind:hover {
-  filter: drop-shadow(0 0 2em #61f8fbaa);
-}
-.logo.typescript:hover {
-  filter: drop-shadow(0 0 2em #3a85d6aa);
+  & .logo {
+    @apply inline-block h-10 w-10 px-2;
+    @apply transition-[filter] will-change-[filter];
+    &.vite:hover {
+      filter: drop-shadow(0 0 2em #646cffaa);
+    }
+    &.react:hover {
+      filter: drop-shadow(0 0 2em #61dafbaa);
+    }
+    &.tailwind:hover {
+      filter: drop-shadow(0 0 2em #61f8fbaa);
+    }
+    &.typescript:hover {
+      filter: drop-shadow(0 0 2em #3a85d6aa);
+    }
+  }
 }
