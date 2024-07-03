@@ -1,3 +1,3 @@
 #gallery {
-    @apply my-[40dvh];
+    @apply py-[15dvh];
 }

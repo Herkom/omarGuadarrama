@@ -53,11 +53,17 @@
       }
       & h2 {
         @apply mb-4;
-        @apply text-5xl font-extrabold leading-tight tracking-wider text-secondary;
+        @apply text-5xl font-extrabold leading-tight tracking-wider;
+        & strong {
+          @apply text-secondary;
+        }
       }
     }
-    & .background p {
-      @apply my-2 text-sm;
+    &.background code h3 p {
+      @apply my-2 text-sm w-1/2;
+    }
+    &.thanks h2 strong {
+      @apply text-primary;
     }
   }
 }

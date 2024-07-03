@@ -29,7 +29,7 @@ const History = () => {
             <a href="https://www.autodesk.com">
               <img src={autodeskLogo} className="logo" alt="autodesk logo" />
             </a>{" "}
-            el proyecto <i>Digital HIG</i>.
+            en el proyecto <i>Digital HIG</i>.
           </p>
           <p>
             Contruimos y personalizamos componentes utilizando la biblioteca
@@ -78,8 +78,8 @@ const History = () => {
             <strong>
               Ilustración y animación
               <br />
-              para el sector educativo,
             </strong>
+              para el sector educativo,
           </h2>
           <p>
             además de material gráfico para redes sociales de marcas,
@@ -88,10 +88,10 @@ const History = () => {
           </p>
         </article>
       </section>
-      <section className="slide text">
+      <section className="slide text background">
         <article>
           <code>
-            <h3 className="background">
+            <h3>
               Background = <strong>{"{"}</strong>
               <p>
                 animación, música, gastronomía, ilustración, arquitectura,
@@ -129,9 +129,9 @@ const History = () => {
           </p>
         </article>
       </section>
-      <section className="slide text">
+      <section className="slide text thanks">
         <article>
-          <p className="thanks">
+          <p>
             <strong>Gracias por visitar mi sitio!</strong>
           </p>
           <p>
