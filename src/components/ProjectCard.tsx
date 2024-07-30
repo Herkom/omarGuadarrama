@@ -23,7 +23,7 @@ export const ProjectCard = ({
   <Card className="card">
     <CardImage
       className="card--image"
-      src={`/projectImages/resized/${cardBackgroundImage}`}
+      src={`/omarGuadarrama/projectImages/resized/${cardBackgroundImage}`}
       alt={`image of ${projectName} project`}
     />
     <HoverCard openDelay={150}>
@@ -39,7 +39,7 @@ export const ProjectCard = ({
           <small className="text-sm font-medium leading-none text-muted-foreground">Tools</small>
           <div>
             {technologies.map((technology) => (
-              <img key={technology} src={`/svg/${technology}.svg`} alt={`${technology} icon`} className="card--technology"/>
+              <img key={technology} src={`/omarGuadarrama/svg/${technology}.svg`} alt={`${technology} icon`} className="card--technology"/>
             ))}
           </div>
           <HoverCardArrow />

@@ -92,7 +92,7 @@ const History = () => {
         <article>
           <code>
             <h3>
-              Background = <strong>{"{"}</strong>
+              Background = <strong>{"["}</strong>
               <p>
                 animación, música, gastronomía, ilustración, arquitectura,
                 diseño industrial, motion graphics, IOT, Arduino/Raspberry,
@@ -100,7 +100,7 @@ const History = () => {
                 agricultura vertical, realidad aumentada, inteligencia
                 artificial, big data, en fin...
               </p>
-              <strong>{"}"}</strong>
+              <strong>{"]"}</strong>
             </h3>
           </code>
           <h2>
@@ -139,7 +139,7 @@ const History = () => {
             actualizaciones.
           </p>
           <h2>
-            Ve mi <strong>portafolio</strong> para más detalles.
+            Ve mi <a href="#gallery"><strong>portafolio</strong></a> para más detalles.
           </h2>
         </article>
       </section>
