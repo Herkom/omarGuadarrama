@@ -1,17 +1,129 @@
+header {
+  & .logoOnlyForMobile {
+    @apply mx-auto my-8;
+    @apply h-24 w-24;
+    @apply fill-foreground;
+
+    @apply md:h-0 md:w-0;
+  }
+  & .menuIcon {
+    @apply md:hidden;
+
+    @apply h-14 w-14;
+    @apply -translate-x-4 translate-y-4;
+    @apply transition-transform;
+    @apply fixed bottom-[5dvh] right-0 z-50;
+
+    & .icon {
+      @apply h-14 w-14;
+      perspective: 1cm;
+      transform: rotateZ(-55deg) rotateX(35deg) rotateY(35deg);
+      @apply origin-bottom-left;
+      transform-style: preserve-3d;
+      perspective-origin: top;
+      @apply transition-all;
+
+      & .O,
+      & .G {
+        @apply h-full w-full;
+        @apply transition-all;
+        @apply border-4 border-solid border-background;
+
+        &.borderHighlight {
+          animation: borderChange 4s ease infinite;
+          & svg {
+            background: linear-gradient(
+              270deg,
+              #000000,
+              #000000,
+              #000000,
+              #000000,
+              #1d2653,
+              #5c2d64,
+              #ef6e51,
+              #f4a262,
+              #87cdb4,
+              #4259a8,
+              #000000,
+              #000000,
+              #000000,
+              #000000
+            );
+            background-size: 2800% 2800%;
+            animation: iconHighlight 8s ease infinite;
+          }
+        }
+        & svg {
+          @apply bg-background fill-foreground;
+          & .dot {
+            @apply fill-background;
+            @apply transition-all;
+          }
+        }
+      }
+      & .O {
+        transform: scaleX(100%) translateZ(-2px);
+        @apply z-50
+      }
+      & .G {
+        transform: scaleX(85%) translate3d(33%, -135%, 2px);
+        @apply z-50;
+      }
+    }
+
+    &.beingTouched {
+      @apply -translate-x-8 translate-y-4;
+      @apply right-[3dvh];
+      & .icon {
+        transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+        & .O {
+          transform: scaleX(75%) translateZ(0px);
+          @apply border-0;
+          & svg .dot {
+            @apply fill-foreground;
+          }
+        }
+        & .G {
+          transform: scaleX(66.6%) translateX(84%) translateY(-100%)
+            translateZ(0px);
+          @apply border-0;
+        }
+      }
+    }
+  }
+}
 #navbar {
-  @apply fixed top-0 left-0 right-0 z-40 box-border bg-background;
-  @apply h-[15dvh] px-12;
-  @apply flex justify-between items-center;
+  /* Remain the same */
+  @apply fixed top-0 left-0 right-0 box-border ;
+  @apply bg-background;
+  @apply flex;
+  @apply z-40;
+  
+  /* Mobile */
+  @apply w-[100dvw] h-[100dvh];
+  @apply flex-col-reverse justify-around items-end;
+  @apply pt-[5dvh] pr-[15dvw] pb-14 pl-[10dvw];
+
+  /* Wider */
+  @apply md:flex-row;
+  @apply md:h-[15dvh] md:px-12 md:py-0;
+  @apply md:items-center md:justify-between;
+
   & .logo {
-    @apply flex justify-between;
+    @apply flex order-3 self-start;
+    @apply md:justify-between md:order-2 md:self-center;
     & svg {
-      @apply h-[5dvh] fill-primary;
+      @apply h-[8dvw];
+      @apply fill-primary;
+      @apply md:h-[5dvh];
     }
   }
   & .menu {
-    @apply flex h-full;
+    @apply flex h-1/3 items-center;
+    @apply md:h-full;
     & ul {
-      @apply flex items-center text-foreground;
+      @apply flex text-foreground flex-col;
+      @apply md:flex-row;
       &::before {
         @apply content-['\['];
       }
@@ -19,7 +131,7 @@
         @apply content-['\]'];
       }
       & li {
-        @apply mx-2 flex items-center;
+        @apply mx-2 flex items-center text-sm;
         &:nth-child(1)::after,
         &:nth-child(2)::after {
           @apply content-[','];
@@ -27,7 +139,7 @@
         & a {
           @apply flex items-center text-foreground;
           & svg {
-            @apply h-5 fill-current mr-2;
+            @apply mr-2 h-5 fill-current;
           }
         }
       }
@@ -35,11 +147,64 @@
     &:not(#social) ul li a:hover {
       @apply border-b-[1px] border-solid;
     }
-    &#social ul {
+    &#social {
+      @apply md:order-3;
+      & ul {
       @apply items-center;
-      & li a:hover p{
-        @apply border-b-[1px] border-solid;
+        & li a:hover p {
+          @apply border-b-[1px] border-solid;
+        }
       }
     }
+  }
+}
+@keyframes iconHighlight {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes borderChange {
+  0% {
+    border-color: black;
+    border-width: 5px;
+  }
+  21.4% {
+    border-color: black;
+  }
+  28.5% {
+    border-color: #1d2653;
+    border-width: 6px;
+  }
+  35.7% {
+    border-color: #5c2d64;
+  }
+  42.8% {
+    border-color: #ef6e51;
+  }
+  50% {
+    border-color: #f4a262;
+  }
+  57.1% {
+    border-color: #87cdb4;
+  }
+  64.2% {
+    border-color: #4259a8;
+    border-width: 6px;
+  }
+  71.4% {
+    border-color: black;
+  }
+  71.5% {
+    border-color: black;
+  }
+  100% {
+    border-color: black;
+    border-width: 5px;
   }
 }

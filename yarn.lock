@@ -414,7 +414,7 @@
 
 "@fontsource/ubuntu@^5.0.13":
   version "5.0.13"
-  resolved "https://npm.autodesk.com/artifactory/api/npm/autodesk-npm-virtual/@fontsource/ubuntu/-/ubuntu-5.0.13.tgz#1521b3ada4afe82358fbc1f3ab975a7fa5a0864d"
+  resolved "https://registry.yarnpkg.com/@fontsource/ubuntu/-/ubuntu-5.0.13.tgz#1521b3ada4afe82358fbc1f3ab975a7fa5a0864d"
   integrity sha512-uCnfknLk6ERUUgGPHqvtLGkHkW/0oyxEJy6CZLaHbh6d1om1jvqcnc5nSPel1UCX5frLxRSTkRKU/vAbL9QtJw==
 
 "@humanwhocodes/module-importer@^1.0.1":
@@ -574,7 +574,7 @@
 
 "@radix-ui/react-hover-card@^1.1.1":
   version "1.1.1"
-  resolved "https://npm.autodesk.com/artifactory/api/npm/autodesk-npm-virtual/@radix-ui/react-hover-card/-/react-hover-card-1.1.1.tgz#2982a5a91c7ae5a98e0cacd845fbdfbfdcdab355"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-hover-card/-/react-hover-card-1.1.1.tgz#2982a5a91c7ae5a98e0cacd845fbdfbfdcdab355"
   integrity sha512-IwzAOP97hQpDADYVKrEEHUH/b2LA+9MgB0LgdmnbFO2u/3M5hmEofjjr2M6CyzUblaAqJdFm6B7oFtU72DPXrA==
   dependencies:
     "@radix-ui/primitive" "1.1.0"
@@ -2657,13 +2657,13 @@ prelude-ls@^1.2.1:
 
 prettier-plugin-tailwindcss@^0.6.5:
   version "0.6.5"
-  resolved "https://npm.autodesk.com/artifactory/api/npm/autodesk-npm-virtual/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.6.5.tgz#e05202784a3f41889711ae38c75c5b8cad72f368"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.6.5.tgz#e05202784a3f41889711ae38c75c5b8cad72f368"
   integrity sha512-axfeOArc/RiGHjOIy9HytehlC0ZLeMaqY09mm8YCkMzznKiDkwFzOpBvtuhuv3xG5qB73+Mj7OCe2j/L1ryfuQ==
 
 prettier@^3.3.2:
-  version "3.3.2"
-  resolved "https://npm.autodesk.com/artifactory/api/npm/autodesk-npm-virtual/prettier/-/prettier-3.3.2.tgz#03ff86dc7c835f2d2559ee76876a3914cec4a90a"
-  integrity sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.3.3.tgz#30c54fe0be0d8d12e6ae61dbb10109ea00d53105"
+  integrity sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==
 
 prop-types@^15.8.1:
   version "15.8.1"

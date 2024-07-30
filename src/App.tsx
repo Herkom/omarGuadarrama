@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import "@/styles/App.css";
 
@@ -13,13 +13,34 @@ import NavBar from "@/layouts/navbar";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
-  window.onload = () => setLoading(false);
+  const [isVisited, setIsVisited] = useState(true);
+
+  useEffect(() => {
+    const userFirstVisit = () => {
+      if (localStorage.getItem("firstVisit") === null) {
+        localStorage.setItem("firstVisit", "true");
+        return true;
+      } else {
+        return false;
+      }
+    };
+
+    const handleWindowLoad = () => {
+      setLoading(false);
+      setIsVisited(userFirstVisit());
+    };
+
+    window.addEventListener("load", handleWindowLoad);
+
+    return () => {
+      window.removeEventListener("load", handleWindowLoad);
+    };
+  }, []);
+
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      { /* Loading component is rendered first */ 
-        loading && <Loading />
-      }
-      <NavBar />
+      {/* Loading component is rendered first */ loading && <Loading />}
+      <NavBar isVisited={isVisited} />
       <Intro />
       <ModeToggle />
       <Gallery />
@@ -27,6 +48,6 @@ const App = () => {
       <Footer />
     </ThemeProvider>
   );
-}
+};
 
 export default App;
